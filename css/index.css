@@ -5,371 +5,209 @@
 /************************************************************/
 /*mainvisual*/
 /************************************************************/
-.mainvisual-wrap{
-	position: relative;
-    overflow: hidden;
+#mainvisual{
+	background-image: url("../img/bg-rt.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+#mainvisual .flex-left{
+	width: 70%;
+}
+#mainvisual .flex-right{
+	width: 30%;
+	padding: 10px;
+}
+
+#mainvisual ul li{
 	width: 100%;
-	height: 100vh;
-	margin-bottom: 100px;
+	height: 800px;
 }
-.mainvisual-main{
-    overflow: hidden;
-    position: relative;
-}
-
-.mainvisual-gara{
-	z-index: 90;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-	width:100%;
-	height: 40vh;
-	text-align: center;
-}
-
-.mainvisual-gara img{
+#mainvisual ul li img{
 	height: 100%;
 	object-fit: cover;
-	
+	border-radius: 0 30px 30px 0;
 }
-
-.mainvisual-circle{
-	z-index: 100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-	width:100%;
-	text-align: center;
+#mainvisual .logo{
+	margin-bottom: 20px;
 }
-.mainvisual-circle img{
-	width: 90%;
-	max-width:80vh;
-}
-
-/*スクロールダウン全体の場所*/
-.scrolldown{
-    /*描画位置※位置は適宜調整してください*/
-	position:absolute;
-	bottom:1%;
-	right:20%;
-    /*矢印の動き1秒かけて永遠にループ*/
-	animation: arrowmove 1s ease-in-out infinite;
-}
-
-/*下からの距離が変化して全体が下→上→下に動く*/
-@keyframes arrowmove{
-      0%{bottom:1%;}
-      50%{bottom:3%;}
-     100%{bottom:1%;}
- }
-
-/*Scrollテキストの描写*/
-.scrolldown span{
-    /*描画位置*/
-	position: absolute;
-	left:-20px;
-	bottom:10px;
-    /*テキストの形状*/
-	color: #eee;
-	font-size: 0.7rem;
-	letter-spacing: 0.05em;
-	/*縦書き設定*/
-	-ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-}
-
-/* 矢印の描写 */
-.scrolldown:before {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    bottom: 0;
-    right: -6px;
-    /*矢印の形状*/
-    width: 2px;
-    height: 20px;
-    background: #eee;
-    transform: skewX(-31deg);
-}
-
-.scrolldown:after{
-	content:"";
-    /*描画位置*/
-	position: absolute;
-	bottom:0;
-	right:0;
-    /*矢印の形状*/
-	width:2px;
-	height: 50px;
-	background:#eee;
+#mainvisual .tategaki{
+	font-size: 3.2rem;
+	line-height: 1.5;
+	margin: 0 auto;
+	writing-mode: vertical-rl;
+	color: #333;
 }
 
 
 /************************************************************/
 /*about*/
 /************************************************************/
-.about-wrap{
-	display: flex;
-	align-items: flex-end;
-}
-.about-item{
-	width: 25%;
-}
-.about-item.about-center{
-	width: 50%;
-    background-color: #fff;
-	border-radius: 30px;
-	padding: 40px 0;
-	border: 5px solid #333;
-}
 #about p{
+	text-align:center; 
 	font-size: 3.2rem;
-	line-height: 1.5;
-	margin: 0 auto;
-	-ms-writing-mode: tb-rl;
-	writing-mode: vertical-rl;
-	color: #333;
-	position: relative;
+	margin-bottom: 40px;
 }
-
-/************************************************************/
-/*gallary*/
-/************************************************************/
-.gallary-wrap{
+#about .about-img{
 	margin: 0 auto;
 	max-width: 1500px;
 }
 
 /************************************************************/
-/*event-harvest*/
-/************************************************************/
-#event-harvest .flex-box{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-#event-harvest .flex-item{
-	width: 32%;
-	border-radius: 30px;
-	padding: 20px;
-	background-color: #fff;
-	border: 5px solid #333;
-	color: #333;
-}
-#event-harvest .flex-img{
-	margin-bottom: 20px;
-}
-#event-harvest .flex-text .title{
-	text-align: center;
-	font-size: 3.2rem;
-	margin-bottom: 20px;
-	border-bottom: 5px dashed #008080;
-}
-#event-harvest .flex-text .description{
-	margin-bottom: 20px;
-	min-height: 6em;
-}
-
-/************************************************************/
-/*news*/
-/************************************************************/
-
-#news{
-	padding-top: 50px;
-}
-
-.news-img{
-	margin: 0 auto;
-	padding: 0;
-	width: 50%;
-	max-width:300px;
-}
-
-.news-wrap{
-	margin: 0 auto 40px;
-	max-width: 1000px;
-	background-color: #008080;
-	color: #333;
-	border-radius: 0 50px 0;
-	padding: 40px 30px;
-	width: 100%;
-	border: 5px solid #333;
-}
-
-#news h2.news-title{
-	text-align: center;
-	font-size: 4.2rem;
-	margin-bottom: 40px;
-	border-bottom: 3px dashed #fff;
-	color: #fff;
-}
-
-#news ul{
-	background-color: #fff;
-	padding: 40px;
-	margin-bottom: 10px;
-	border-radius: 30px;
-	border: 5px solid #333;
-}
-#news ul li{
-	padding: 10px 0;
-	border-bottom: 1px dashed #785757;
-}
-#news ul li:last-child{
-	border-bottom: none;
-}
-#news ul li a:hover{
-	text-decoration: underline; 
-}
-#news ul li date{
-	display: block;
-}
-
-#news .news-page{
-	text-align: right;
-}
-
-#news .news-page a{
-	color: #fff;
-}
-#news .news-page a:hover{
-	text-decoration: underline; 
-}
-
-
-/************************************************************/
 /*event*/
 /************************************************************/
-.event-box{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-}
-.event-item{
-	width:48%;
-	margin-bottom: 40px;
-}
-.event-item p{
-	margin-bottom: 40px;
-}
-.event-item ul{
-	margin-bottom: 40px;
-}
-.event-item ul li{
-	margin-bottom: 5px;
+
+.layout-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 2rem;
 }
 
-/************************************************************/
-/*harvest*/
-/************************************************************/
-
-#harvest ul{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+.box-conts {
+	width: 32%;
+  display: flex;
+  flex-direction: column;
 	margin-bottom: 40px;
 }
 
-#harvest ul li {
-    width: 24%;
-    position: relative;
-    overflow: hidden;
-	margin-bottom: 10px;
-	overflow: hidden;
-	border-radius: 50%;
-	border: 5px solid #fff;
+.box-txt {
+  padding: 1rem 0;
 }
 
-#harvest ul li::before{
-    content: "";
-    padding-top: 100%;
-    display: block;
+.box-btn {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+	border-radius: 100vh;
+	background-color: var(--accent-color);
+  color: #333;
+  padding: 0.5rem;
+  margin-top: auto;
 }
-#harvest ul li img{
-	width: 100%;
+
+#event .event-img{
+	height: 250px;
+	margin-bottom: 20px;
+}
+#event .event-img img{
 	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
 	object-fit: cover;
-	transition: 0.3s;
 }
-#harvest ul li img:hover{
-    transform: scale(1.3);
+#event .title{
+	font-size: 2.0rem;
+	margin-bottom: 20px;
 }
-
+#event .description{
+	margin-bottom: 20px;
+}
 
 
 /************************************************************/
-/*shop*/
+/*features*/
 /************************************************************/
-.shop-box{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+#features{
+		background-image: url("../img/wave2.svg"),url("../img/wave1.svg"),repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 255, 255, 1) 5px, rgba(255, 255, 255, 1) 10px );
+	background-repeat: no-repeat,no-repeat;
+	background-size:contain,contain;
+	background-position: top center, bottom center;
+	background-color: var(--bg-color);
+	padding: 120px 0;
 }
-.shop-item{
-	width:48%;
+.features-wrap{
+	padding: 40px 5%;
+	background-color: #fff;
+	border-radius: 15px;
+}
+#features .title{
+	text-align: center;
+	font-size: clamp( 2.4rem, 2.4vw, 3.6rem) ;
 	margin-bottom: 40px;
 }
-.shop-item p{
+#features .title span{
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	background: var(--accent-color);
+	text-align:center;
+	line-height: 1.5em;
+	margin-right: 5px;
+}
+
+#features .features-item-wrap{
 	margin-bottom: 40px;
 }
-.shop-item ul{
-	margin-bottom: 40px;
+
+#features .season .flex-item{
+	width: 24%;
+	position: relative;
+	margin-bottom: 20px;
+	overflow: hidden;
 }
-.shop-item ul li{
-	margin-bottom: 5px;
+
+
+#features .season img{
+	transition:transform .6s ease;
 }
-.shop-item img{
+#features .season img:hover{
+	transform:scale(1.3);
+	transition:transform .6s ease;
+}
+#features .season .flex-item p{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 7.2rem;
+}
+
+#features .kakou ul{
+	padding: 15px 15px 15px 40px;
+	border:2px solid #333;
 	border-radius: 30px;
+	margin-bottom: 40px;
+	
 }
 
+#features .kakou ul li{
+	margin-bottom: 10px;
+	list-style-type: circle;
+}
+#features .kakou ul li:last-child{
+	margin-bottom: 0;
+}
 /************************************************************/
 /*recruit*/
 /************************************************************/
-#recruit{
-	background-image: url("../img/wave1.svg"), url("../img/wave2.svg");
-	background-position: bottom center, top center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: contain, contain;
-	background-color: #400000;
-}
-.recruit-box{
-	display: flex;
-	justify-content: space-between;
-	align-items: center
-}
-.rectuit-item{
-	width:48%;
+#recruit .slider-8{
 	margin-bottom: 40px;
 }
-.rectuit-item p{
-	margin-bottom: 40px;
+.slider-8 .slick-slide {
+  width: 300px;
+  position: relative;
+  overflow: hidden;
 }
-.rectuit-item ul{
-	margin-left: 1em;
-	margin-bottom: 40px;
-}
-.rectuit-item ul li{
-	list-style-type: circle;
-	margin-bottom: 5px;
-}
-.rectuit-item ul li:last-child{
-	margin-bottom: 0px;
+.slider-8 .slick-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /************************************************************/
 /*access*/
 /************************************************************/
+#access{
+	background-image: url("../img/wave2.svg"),url("../img/wave1.svg");
+	background-repeat: no-repeat,no-repeat;
+	background-size:contain,contain;
+	background-position: top center, bottom center;
+	background-color: var(--bg-color);
+	padding: 120px 0;
+}
+#access .sec-title span{
+	border-bottom: 5px dashed #fff;
+}
 .access-box{
 	display: flex;
 	justify-content: space-between;
@@ -380,30 +218,90 @@
 	margin-bottom: 40px;
 }
 
-.access-table{
-	border-radius: 30px;
-	overflow: hidden;
-}
-.access-table tr{
-	border-bottom: 3px solid #333;
-}
-.access-table tr:last-child{
-	border-bottom: none;
-}
+
 .access-table th{
 	width: 35%;
 	padding: 40px 10px;
 	text-align: center;
-	background-color: #008080;
-	color: #fff;
+	background-color: var(--accent-color);
+	color: #333;
+	border: 2px solid #333;
 }
 .access-table td{
 	width: 65%;
 	padding: 40px 10px;
 	background-color: #fff;
 	color: #333;
+	border: 2px solid #333;
 }
 
+/************************************************************/
+/*news*/
+/************************************************************/
+
+#news{
+	background-image: url("../img/bg-lb.png");
+		background-position: left bottom;
+		background-repeat: no-repeat;
+}
+.news-wrap{
+	margin: 0 auto 40px;
+	max-width: 1000px;
+	background-color: var(--accent-color);
+	color: #333;
+	border-radius: 30px;
+	padding: 40px 30px;
+	width: 100%;
+}
+
+#news h2.news-title{
+	text-align: center;
+	font-size: 4.2rem;
+	margin-bottom: 40px;
+	border-bottom: 5px dashed #fff;
+	color: #333;
+}
+
+#news ul{
+	background-color: #fff;
+	padding: 40px;
+	margin-bottom: 10px;
+	border-radius: 30px;
+	border: 2px solid #333;
+}
+#news ul li{
+	padding: 20px 0;
+	border-bottom: 1px dashed #785757;
+}
+#news ul li:last-child{
+	border-bottom: none;
+}
+#news ul li a:hover{
+	text-decoration: underline; 
+}
+#news .flex-left{
+	width: 150px;
+	height: 150px;
+}
+#news .flex-left img{
+	height: 100%;
+	object-fit: cover;
+}
+#news .flex-right{
+	flex: 1;
+	padding-left: 20px;
+}
+
+#news .news-page{
+	text-align: right;
+}
+
+#news .news-page a{
+	color: #333;
+}
+#news .news-page a:hover{
+	text-decoration: underline; 
+}
 
 /************************************************************/
 /*pc*/
@@ -416,94 +314,96 @@
 /************************************************************/
 @media screen and ( max-width: 1279px) and (min-width: 768px){
 
-	#event-harvest .flex-item{
-		width: 48%;
-		margin-bottom: 40px;
-	}
+
 }
 /************************************************************/
 /*sp*/
 /************************************************************/
 @media screen and (max-width: 767px){
-	#gallary{
-		padding: 0;
+
+	#mainvisual{
+		background: none;
 	}
-	.mainvisual-gara{
-		width: 100%;
-		height: 50vh;
-		top: 0;
-		left: 0;
-		transform: translate(0,0);
-		-webkit-transform: translate(0,0);
-		-ms-transform: translate(0,0);
-	}
-	
-	#event-harvest .flex-box{
+	#mainvisual .flex-box{
 		flex-direction: column;
 	}
-	#event-harvest .flex-item{
+	#mainvisual .flex-left{
+		width: 100%;
+	}
+	#mainvisual .flex-right{
+	background-image: url("../img/bg-rt.png");
+		background-position: right top;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+	}
+	#mainvisual ul li{
+		height: 400px;
+	}
+	#mainvisual ul li img{
+		border-radius: 0 ;
+	}
+	#mainvisual .tategaki{
+		font-size: 2.0rem;
+		writing-mode: horizontal-tb;
+		text-align: center
+	}
+
+	#about p{
+		text-align:left; 
+		font-size: 2.4rem;
+	}
+	
+	#event .flex-item{
+		width: 100%;
+	}
+	
+	
+	.layout-block {
+		flex-direction: column;
+	}
+
+	.box-conts {
+		width: 100%;
+	}
+	
+	
+	#features .features-item-wrap{
+		margin-bottom: 80px;
+	}
+	#features .season .flex-item{
+		width: 48%;
+	}
+	#features .kakou .flex-box{
+		flex-direction: column-reverse;
+	}
+	#features .kakou .flex-item{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	#features .online .flex-box{
+		flex-direction: column;
+	}
+	#features .online .flex-item{
 		width: 100%;
 		margin-bottom: 40px;
 	}
 	
-	#about .contents{
-		padding: 0;
+	#recruit .flex-box{
+		flex-direction: column;
 	}
-	.about-wrap{
-		flex-direction: column-reverse;
-	}
-	.about-item{
+	#recruit .flex-item{
 		width: 100%;
-	}
-	.about-img{
-		text-align: right;
-	}
-	.about-img img{
-		width: 150px;
-		height: auto;
-	}
-	.about-item.about-center{
-		margin: 0 auto;
-		width: 90%;
+		margin-bottom: 40px;
 	}
 	
-	#about p{
-		font-size: 2.4rem;
-	}
-	
-	.event-box{
-		flex-direction: column;
-	}
-	.event-item{
-		width:100%;
-	}
-	#harvest ul li {
-		width: 48%;
-	}
-	.shop-box{
-		flex-direction: column;
-	}
-	.shop-item{
-		width:100%;
-	}
-	.recruit-box{
-		flex-direction: column-reverse;
-	}
-	.rectuit-item{
-		width:100%;
-	}
-
 	.access-box{
 		flex-direction: column;
 	}
 	.access-item{
-		width: 100%;
+		width:100%;
 	}
 	
-
-	.online-wrap li{
-		width: 100%;
-	}
 }
 
 

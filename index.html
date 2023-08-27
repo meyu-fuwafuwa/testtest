@@ -6,166 +6,247 @@
 	<meta name="Description" content="はしもとあびりん農場は○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○、○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<script src="js/jquery-3.7.0.min.js"></script>
-	<script src=”js/slick.min.js”></script>
+	<script src="js/slick.min.js"></script>
 </head>
 
 <body>
 	
 	<header>
-		<div class="wrap header-wrap">
-			<h1 class="site-title">
-				<a href="index.html">
-					<img src="img/logo.svg" alt="logo">
-				</a>
-			</h1>
-			<div class="openbtn">
-				<span></span><span></span><span></span>
+		<h1 class="site-title">
+			<a href="index.html">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+		</h1>
+		
+		<div class="openbtn"><span></span><span></span><span></span></div>
+		<nav id="g-nav">
+			<div id="g-nav-list">
+				<ul>
+					<li><a href="#">トップページ</a></li>
+					<li><a href="#">農園体験プログラム</a></li>
+					<li><a href="#">収穫物一覧</a></li>
+					<li><a href="#">採用情報</a></li>
+					<li><a href="#">営業時間・アクセス</a></li>
+					<li><a href="#">お問い合わせ</a></li>
+				</ul>
 			</div>
-		</div>
+		</nav>
+		<div class="circle-bg"></div>
 	</header>
 	
-	<nav class="nav">
-		<div class="wrap">
-			<ul class="nav_menu_ul">
-				<li class="nav_menu_li"><a href="#">トップページ</a></li>
-				<li class="nav_menu_li"><a href="#">お知らせ一覧</a></li>
-				<li class="nav_menu_li"><a href="#">農園体験プログラム</a></li>
-				<li class="nav_menu_li"><a href="#">収穫物一覧</a></li>
-				<li class="nav_menu_li"><a href="#">営業時間・アクセス</a></li>
-				<li class="nav_menu_li"><a href="#">お問い合わせ</a></li>
-			</ul>
-		</div>
-	</nav>
-	
 	<main>
-		<div id="mainvisual">
-			<div class="mainvisual-wrap">
-				<div id="mainvisual-gara" class="mainvisual-gara">
-					<img src="img/bg2.jpg" alt="柄">
+		<section id="mainvisual">
+			<div class="flex-box">
+				<div class="flex-item flex-left">
+					<ul class="slide">
+						<li>
+						  <img src="img/mainvisual1.jpg" />
+						</li>
+						<li>
+						  <img src="img/mainvisual2.jpg" />
+						</li>
+						<li>
+						  <img src="img/mainvisual3.jpg" />
+						</li>
+					</ul>
 				</div>
-				<div class="mainvisual-circle">
-					<img src="img/mainvisual.png" alt="ロゴマーク">
+				<div class="flex-item flex-right">
+					<div class="logo">
+						<img src="img/logo.svg">
+					</div>
+					<p class="tategaki">家族で笑顔になれる場所</p>
 				</div>
-				<div class="scrolldown"><span>Scroll</span></div>
 			</div>
-		</div>
+		</section>
 		
+
 		<section id="about">
-			<div class="contents fadein">
-				<div class="about-wrap">
-					<div class="about-item about-img">
-						<img src="img/about.png" alt="女の子">
-					</div>
-					<div class="about-item about-center">
-						<p class="tategaki">
-							はしもとあびりん農園とは<br>
-							〇〇県〇〇市にある観光農園です。<br>
-							様々な野菜・フルーツと豊かな自然が<br>
-							あなたを待っています。
-						</p>
-					</div>
-					<div class="about-item"></div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="gallary">
-			<div class="gallary-wrap">
+			<p>
+				はしもとあびりん農園は<br>〇〇県〇〇市にある観光農園です。<br>
+				様々な野菜・フルーツと豊かな自然のなかで<br>
+				あなたもわたしもきっと笑顔になれるはず。
+			</p>
+			<div class="about-img">
 				<picture>
-  <source srcset="img/gallary-sp.png" media="(max-width: 767px)">
-  <img src="img/gallary-pc.png" alt="農園の様子">
-</picture>
-
+				  <source srcset="img/gallary-sp.png" media="(max-width: 767px)">
+				  <img src="img/gallary-pc.png" alt="農園の様子">
+				</picture>
 			</div>
 		</section>
 		
-		<section id="event-harvest">
+		
+		<section id="event">
 			<div class="contents fadein">
-				<div class="flex-box">
-					<div class="flex-item">
-						<div class="flex-img circle">
-							<img src="img/event1.jpg" alt="event">
+				<h2 class="sec-title"><span>農園体験プログラム</span></h2>
+				<div class="layout-block">
+
+					<div class="box-conts">
+						<div class="event-img">
+							<img src="img/mainvisual1.jpg" alt="sample01">
 						</div>
-						<div class="flex-text">
-							<p class="title">農園体験プログラム</p>
-							<p class="description">アクティビティやイベントが盛りだくさん！ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</p>
-							<a href="#" class="btn">プログラム詳細</a>
-						</div>
+						<p class="title">ブドウ狩りｓ</p>
+						<p class="description">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+						<a class="box-btn" href="#">view more</a>
 					</div>
-					<div class="flex-item">
-						<div class="flex-img circle">
-							<img src="img/mainvisual1.jpg" alt="event">
+
+					<div class="box-conts">
+						<div class="event-img">
+							<img src="img/mainvisual2.jpg" alt="sample01">
 						</div>
-						<div class="flex-text">
-							<p class="title">収穫物一覧</p>
-							<p class="description">当農園では季節ごとに様々な野菜・フルーツが収穫できます。ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</p>
-							<a href="#" class="btn">収穫物一覧</a>
-						</div>
+						<p class="title">お客さまが笑顔になるパスタ料理を作ろう！</p>
+						<p class="description">パスタシェフとして、食材の知識を深め、調理の技術を磨き、パスタ料理を作ります。試食後、メニューの名前やおすすめポイントを考え、メニュー表に記入し、完成させます。</p>
+						<a class="box-btn" href="#">view more</a>
 					</div>
-					<div class="flex-item">
-						<div class="flex-img circle">
-							<img src="img/event2.jpg" alt="event">
+
+					<div class="box-conts">
+						<div class="event-img">
+							<img src="img/mainvisual3.jpg" alt="sample01">
 						</div>
-						<div class="flex-text">
-							<p class="title">テストテスト</p>
-							<p class="description">ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</p>
-							<a href="#" class="btn">リンク</a>
-						</div>
+						<p class="title">ブドウ狩りｓ</p>
+						<p class="description">テキスト</p>
+						<a class="box-btn" href="#">view more</a>
 					</div>
+
+				</div>
+				<div class="btn-wrap">
+					<a href="#" class="btn">プログラム一覧</a>
 				</div>
 			</div>
 		</section>
 		
-		<section id="shop">
-			<div class="contents fadein">
-
-				<div class="shop-box">
-					<div class="shop-item">
-					<h2 class="sec-title">収穫農産物の販売</h2>
-					<h3 class="contents-title">
-					近隣の道の駅や販売所にて<br>
-					農作物加工商品として販売しています
-					</h3>
-						<p>
-							ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
-						</p>
-						<p>
-							ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
-						</p>
-						<p>
-							ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
-						</p>
-						<a href="#" class="btn">オンラインショップ</a>
-					</div>
-					<div class="event-item">
-						<img src="img/shop.png" alt="商品">
-					</div>
-				</div>
-			</div>
-		</section>
+		
 		
 
-		<section id="recruit">
-			<div class="contents fadein">
-				<div class="recruit-box">
-					<div class="rectuit-item circle">
-						<img src="img/event2.jpg" class="農家で働く人のイラスト">
-					</div>
-					<div class="rectuit-item">
-				<h2 class="sec-title">障がい者就労支援事業</h2>
-				<h3 class="contents-title">はしもとあびりん農園で<br class="sp-only">働いてみませんか？</h3>
-						<p>
-							当農園では積極的に障がい者雇用をおこなっております。
-						</p>
-						<ul>
-							<li>ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</li>
-							<li>ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</li>
-							<li>ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</li>
-							<li>ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</li>
+		
+		
+		<section id="features">
+			<div class="contents">
+				<div class="features-wrap">
+				
+					<h2 class="sec-title"><span>笑顔になれる魅力</span></h2>
+				
+					<div class="season features-item-wrap">
+						<h3 class="title"><span>１</span>様々な農作物</h3>
+						<p>季節によってさまざまな農作物を収穫できます。</p>
+						<ul class="flex-box">
+							<li class="flex-item circle">
+								<a href="#">
+									<img src="img/harvest1.jpg">
+									<p>春</p>
+								</a>
+							</li>
+							<li class="flex-item circle">
+								<a href="#">
+									<img src="img/harvest2.jpg">
+									<p>夏</p>
+								</a>
+							</li>
+							<li class="flex-item circle">
+								<a href="#">
+									<img src="img/harvest3.jpg">
+									<p>秋</p>
+								</a>
+							</li>
+							<li class="flex-item circle">
+								<a href="#">
+									<img src="img/harvest4.jpg">
+									<p>冬</p>
+								</a>
+							</li>
 						</ul>
+						<div class="btn-wrap">
+							<a href="#" class="btn">農作物一覧</a>
+						</div>
+					</div>
+					
+					
+					<div class="kakou features-item-wrap">
+						<div class="flex-box">
+							<div class="flex-item">
+								<img src="img/shop.png" alt="商品">
+							</div>
+							<div class="flex-item ">
+								<h3 class="title"><span>２</span>農作物加工商品</h3>
+								<p>
+								コロナ禍での集客減などから６次産業化の取り組みを進めていた。
+								</p>
+								<p>
+								近隣の道の駅、販売所で販売している農作物加工商品をPRしたい
+								</p>
+								<ul>
+									<li>道の駅　〇〇〇〇</li>
+									<li>道の駅　〇〇〇〇</li>
+									<li>スーパー　〇〇〇〇</li>
+									<li>スーパー　〇〇〇〇</li>
+								</ul>
+								<div class="btn-wrap">
+									<a href="#" class="btn">オンラインショップ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="online features-item-wrap">
+						<div class="flex-box">
+							<div class="flex-item ">
+								<h3 class="title"><span>３</span>収穫農産物の有効活用</h3>
+								<p>
+								廃棄量削減を目的に訳あり品としてネット販売に取り組みたい
+								</p>
+								<p>
+								ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
+								</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn">オンラインショップ</a>
+								</div>
+							</div>
+							<div class="flex-item circle">
+								<img src="img/mainvisual.jpg" alt="商品">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="recruit">
+			<div class="fadein">
+				<h2 class="sec-title"><span>採用情報</span></h2>
+				<ul class="slider-8" id="js-slider-8">
+				  <li class="circle"><img src="img/recruit1.jpg" alt=""></li>
+				  <li class="circle"><img src="img/recruit2.jpg" alt=""></li>
+				  <li class="circle"><img src="img/recruit3.jpg" alt=""></li>
+				  <li class="circle"><img src="img/recruit4.jpg" alt=""></li>
+				  <li class="circle"><img src="img/recruit1.jpg" alt=""></li>
+				  <li class="circle"><img src="img/recruit2.jpg" alt=""></li>
+				  <li class="circle"><img src="img/recruit3.jpg" alt=""></li>
+				  <li class="circle"><img src="img/recruit4.jpg" alt=""></li>
+				</ul>
+				<div class="contents">
+					<div class="flex-box">
+						<div class="flex-item">
+							<h3 class="contents-title">あなたもはしもとあびりん農園で<br>みんなを笑顔にしませんか？</h3>
+							<p>
+							ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
+							</p>
+							<p>
+							ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
+							</p>
+						</div>
+						<div class="flex-item">
+							<ul>
+								<li>ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</li>
+								<li>ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</li>
+								<li>ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</li>
+								<li>ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ</li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn-wrap">
 						<a href="#" class="btn">採用エントリー</a>
 					</div>
 				</div>
@@ -175,7 +256,7 @@
 		
 		<section id="access">
 			<div class="contents fadein">
-				<h2 class="sec-title">営業時間・アクセス</h2>
+				<h2 class="sec-title"><span>営業時間・アクセス</span></h2>
 				<div class="access-box">
 					<div class="access-item">
 						<table class="access-table">
@@ -210,15 +291,48 @@
 		
 		<section id="news">
 			<div class="contents fadein">
-				<div class="news-img">
-					<img src="img/news-ue.PNG" alt="キャラクター">
-				</div>
 				<div class="news-wrap">
 					<h2 class="news-title">お知らせ</h2>
 					<ul>
-						<li><a href="#"><date>2023.08.01</date> ××××の収穫が始まりました！</a></li>
-						<li><a href="#"><date>2023.08.01</date>〇月〇日は休園日です</a></li>
-						<li><a href="#"><date>2023.08.01</date> ホームページリニューアルのお知らせ</a></li>
+						<li>
+							<a href="#">
+								<div class="flex-box">
+									<div class="flex-item flex-left">
+										<img src="img/mainvisual1.jpg">
+									</div>
+									<div class="flex-item flex-right">
+										<p>2023.08.01</p>
+										<p>××××の収穫が始まりました！</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="flex-box">
+									<div class="flex-item flex-left">
+										<img src="img/mainvisual1.jpg">
+									</div>
+									<div class="flex-item flex-right">
+										<p>2023.08.01</p>
+										<p>××××の収穫が始まりました！</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="flex-box">
+									<div class="flex-item flex-left">
+										<img src="img/mainvisual1.jpg">
+									</div>
+									<div class="flex-item flex-right">
+										<p>2023.08.01</p>
+										<p>××××の収穫が始まりました！</p>
+									</div>
+								</div>
+							</a>
+						</li>
 					</ul>
 					<div class="news-page">
 						<a href="#">お知らせ一覧を見る</a>

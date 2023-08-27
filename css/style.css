@@ -5,8 +5,8 @@
 /*アクセント : #93ca76*/
 
 :root {
-  --accent-color: #93ca76;
-  --bg-color: #f6bfbc;
+  --accent-color: #A8DF8E;
+  --bg-color: #FFBFBF;
 }
 
 /************************************************************/
@@ -42,6 +42,7 @@ html{
 body{
 	background-color: #fff;
 	color: #333;
+	line-height: 1.5;
 	font-weight: bold;
 	font-size: 1.6rem;
 	font-family: "UD デジタル 教科書体 N-R","Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
@@ -111,6 +112,11 @@ section{
 	text-align: center;
 	font-size: clamp( 1.6rem, 2vw, 3.2rem) ;
 	margin-bottom: 40px;
+}
+.contents-title img{
+	display: block;
+	width:150px;
+	margin: 0 auto;
 }
 
 /*正円*/

@@ -36,7 +36,7 @@ var $slide_pickup = $(".slide-pickup")
     pauseOnFocus: false,
     pauseOnHover: false,
     slidesToShow: 3,
-    speed: 1500,   // 画像切り替えにかかる時間（ミリ秒）
+    speed: 500,   // 画像切り替えにかかる時間（ミリ秒）
     autoplaySpeed: 5000,   // 自動スライド切り替え速度
 	responsive: [
       {

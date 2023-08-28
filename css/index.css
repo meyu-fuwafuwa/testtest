@@ -128,12 +128,7 @@
 	overflow: hidden;
 }
 
-
 #features .season .flex-item img{
-	transition:transform .6s ease;
-}
-#features .season .flex-item img:hover{
-	transform:scale(1.3);
 	transition:transform .6s ease;
 }
 #features .season .flex-item p{

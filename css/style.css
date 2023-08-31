@@ -1,9 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* 背景：#fff */
-/*アクセント : #93ca76*/
-
 @font-face {
   font-family: 'M_PLUS_Rounded';
   src: url('../font/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf') format('truetype');
@@ -74,6 +71,9 @@ main{
 section{
 	padding: 80px 0;
 }
+section:last-child{
+	padding-bottom: 120px;
+}
 
 /*flex*/
 .flex-box{
@@ -118,11 +118,11 @@ section{
 	text-align: center;
 	font-size: clamp( 2.4rem, 2.4vw, 4.2rem) ;
 	margin-bottom: 40px;
-}
-.contents-title img{
-	display: block;
-	width:150px;
-	margin: 0 auto;
+	background-image: url("../img/point.png");
+	background-position: top center;
+	background-size: 200px 73px;
+	background-repeat: no-repeat;
+	padding-top: 75px;
 }
 
 /*正円*/

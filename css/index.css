@@ -21,7 +21,7 @@
 
 #mainvisual ul li{
 	width: 100%;
-	height: 600px;
+	height: 800px;
 }
 #mainvisual ul li img{
 	height: 100%;
@@ -54,30 +54,25 @@
 }
 
 /************************************************************/
-/*event*/
+/*pickup*/
 /************************************************************/
 
-#event .flex-box {
+#pickup .flex-box {
 	align-items: flex-start;
 }
-#event .flex-item {
-	padding: 0 5px;
+#pickup .flex-item {
+	padding: 0 10px;
 	width: 32%;
 }
 
-#event .event-img{
-	height: 250px;
+#pickup .pickup-img{
 	margin-bottom: 20px;
 }
-#event .event-img img{
-	height: 100%;
-	object-fit: cover;
-}
-#event .title{
+#pickup .title{
 	font-size: 2.0rem;
 	margin-bottom: 20px;
 }
-#event .description{
+#pickup .description{
 	margin-bottom: 20px;
 }
 
@@ -158,6 +153,10 @@
 /************************************************************/
 /*recruit*/
 /************************************************************/
+#recruit .flex-box{
+	margin-bottom: 40px;
+}
+
 #recruit .slider-8{
 	margin-bottom: 40px;
 }
@@ -172,11 +171,40 @@
   height: 100%;
   object-fit: cover;
 }
-#recruit .flex-item ul li{
-	margin-left: 1em;
-	list-style-type: circle;
-	margin-bottom: 5px;
+#recruit .flex-box{
+	align-items: flex-start;
 }
+#recruit ol {
+  counter-reset: number;
+}
+#recruit ol li {
+  position: relative;
+	margin-bottom: 10px;
+  padding-left: 2.5em;
+	line-height: 2em;
+}
+#recruit ol li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*以下数字のデザイン変える*/
+  display:inline-block;
+  background: #A8DF8E;
+  color: #333;
+  font-weight:bold;
+  border-radius: 50%;
+  left: 0;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  /*以下 上下中央寄せのため*/
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /************************************************************/
 /*access*/
 /************************************************************/

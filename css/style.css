@@ -4,6 +4,11 @@
 /* 背景：#fff */
 /*アクセント : #93ca76*/
 
+@font-face {
+  font-family: 'M_PLUS_Rounded';
+  src: url('../font/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf') format('truetype');
+}
+
 :root {
   --accent-color: #A8DF8E;
   --bg-color: #FFBFBF;
@@ -45,25 +50,26 @@ body{
 	line-height: 1.5;
 	font-weight: bold;
 	font-size: 1.6rem;
-	font-family: "UD デジタル 教科書体 N-R","Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+	font-family: 'M_PLUS_Rounded',"UD デジタル 教科書体 N-R","Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+	letter-spacing: 0.05em;
 }
 
 a{
 	color: #333;
 }
-
-p{
-	margin-bottom: 20px;
+a:hover{
+	opacity: 0.7;
 }
 
-
+p{
+	margin-bottom: 10px;
+}
 .contents{
 	margin: 0 auto;
 	padding: 0 4%;
 	max-width: 1280px;
 }
 main{
-    overflow: hidden;
 }
 section{
 	padding: 80px 0;
@@ -193,6 +199,21 @@ a.btn:hover {
 	align-items: center;
 	padding: 10px;
 }
+
+.header-list ul{
+	display: flex;
+}
+
+.header-list ul li{
+	padding: 0 10px;
+	border-right: 1px solid #333;
+	
+}
+.header-list ul li:last-child{
+	border-right: 0;
+	padding-right: 0;
+}
+
 
 .openbtn{
 	position:relative;
@@ -356,6 +377,9 @@ footer{
     flex-direction: column;
     z-index: 5;
 }
+#footer-pagetop:hover{
+	opacity: 1;
+}
 #footer-pagetop img{
 	width: 50px;
 	margin-bottom: 5px;
@@ -368,7 +392,7 @@ footer .site-title{
 	margin: 0 auto 40px;
 }
 .footer-wrap{
-	padding-top: 80px;
+	padding: 80px 4% 0;
 	background-color: var(--accent-color);
 }
 .footer-title {
@@ -405,6 +429,7 @@ footer .address{
 footer .copyright{
 	text-align:center;
 	padding: 0 0 20px 0;
+	margin-bottom: 0;
 }
 
 
@@ -412,9 +437,6 @@ footer .copyright{
 /*pc*/
 /************************************************************/
 @media screen and (min-width: 1280px){
-	.tablet-only{
-		display: none;
-	}
 	.sp-only{
 		display: none;
 	}
@@ -423,9 +445,6 @@ footer .copyright{
 /*tablet*/
 /************************************************************/
 @media screen and ( max-width: 1279px) and (min-width: 768px){
-	.pc-only{
-		display: none;
-	}
 	.sp-only{
 		display: none;
 	}
@@ -434,10 +453,7 @@ footer .copyright{
 /*sp*/
 /************************************************************/
 @media screen and (max-width: 767px){
-	.pc-only{
-		display: none;
-	}
-	.tablet-only{
+	.sp-none{
 		display: none;
 	}
 }

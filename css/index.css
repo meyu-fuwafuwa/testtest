@@ -153,9 +153,6 @@
 /************************************************************/
 /*recruit*/
 /************************************************************/
-#recruit .flex-box{
-	margin-bottom: 40px;
-}
 
 #recruit .slider-8{
 	margin-bottom: 40px;
@@ -174,6 +171,9 @@
 #recruit .flex-box{
 	align-items: flex-start;
 }
+#recruit .flex-item{
+	margin-bottom: 40px;
+}
 #recruit ol {
   counter-reset: number;
 }
@@ -182,6 +182,9 @@
 	margin-bottom: 10px;
   padding-left: 2.5em;
 	line-height: 2em;
+}
+#recruit ol li:last-child {
+  margin-bottom: 0;
 }
 #recruit ol li:before{
   /* 以下数字をつける */
@@ -411,7 +414,6 @@
 	}
 	#recruit .flex-item{
 		width: 100%;
-		margin-bottom: 40px;
 	}
 	
 	.access-box{

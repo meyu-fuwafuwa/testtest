@@ -23,14 +23,15 @@
 }
 #syuukaku_list ul.syuukaku-wrap{
 	padding: 0 4%;
-	margin-bottom: 80px;
 	overflow: hidden;
 }
 #syuukaku_list h3{
-	display: inline-block;
-	border-bottom: 3px dashed #FFBFBF;
 	margin-bottom: 40px;
-	font-size: clamp( 2.4rem, 2.4vw, 4.2rem) ;
+	font-size: clamp( 2.4rem, 2.4vw, 4.2rem);
+	text-align: center;
+}
+#syuukaku_list h3 span{
+	border-bottom: 5px dashed #FFBFBF;
 }
 
 #syuukaku_list .timetable{
@@ -39,11 +40,13 @@
 }
 
 #syuukaku_list li{
-	margin-bottom: 40px;
 	align-items: flex-end;
 }
 #syuukaku_list li:nth-child(2n){
 	flex-direction: row-reverse;
+}
+#syuukaku_list .flex-item{
+	margin-bottom: 40px;
 }
 #syuukaku_list li .img{
 	width: 55%;
@@ -87,9 +90,13 @@
 /*sp*/
 /************************************************************/
 @media screen and (max-width: 767px){
-#syuukaku_list .timetable img{
-	width: inherit;
-}
+	#mainvisual{
+		height: 250px;
+	}
+	
+	#syuukaku_list .timetable img{
+		width: inherit;
+	}
 	#syuukaku_list li{
 		flex-direction: column;
 	}

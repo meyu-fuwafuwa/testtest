@@ -19,11 +19,15 @@
 /*nouen_program*/
 /************************************************************/
 #nouen_program .program-description{
-	margin-bottom: 80px;
+	margin-bottom: 40px;
+}
+
+#nouen_program .internal-btn-wrap{
+	margin-bottom: 40px;
 }
 
 #nouen_program .program-wrap{
-	margin-bottom: 80px;
+	padding: 40px 0;
 }
 
 #nouen_program h3{
@@ -34,13 +38,17 @@
 	margin-bottom: 40px;
 }
 
+#nouen_program .syuukaku-check a{
+	text-decoration: underline;
+	color: #b22222;
+}
+
 #nouen_program ul.box-parent{
   	display:flex;
-	justify-content:space-between;
 	flex-wrap: wrap;
 }
 #nouen_program ul.box-parent li.box-child{
-	width:24%;
+	width:25%;
 	height:auto;
 	display:flex;
 	flex-direction:column;
@@ -58,7 +66,7 @@
 #nouen_program ul.box-parent li.box-child .description{
   width:100%;
   flex-grow:1;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .remodal{
@@ -118,7 +126,7 @@
 @media screen and ( max-width: 1279px) and (min-width: 768px){
 
 	#nouen_program ul.box-parent li.box-child{
-		width:32%;
+		width:50%;
 	}
 
 }
@@ -130,8 +138,11 @@
 		height: 250px;
 	}
 	
+	#nouen_program ul.box-parent{
+		flex-direction:column; 
+	}
 	#nouen_program ul.box-parent li.box-child{
-		width:49%;
+		width:100%;
 	}
 	
 	.remodal .flex-box{

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title>農作物一覧 - あびりん農場</title>
+	<title>プログラム一覧 - あびりん農場</title>
 	<meta name="Description" content="あびりん農園は〇〇県〇〇市にある観光農園です。様々な野菜・フルーツと豊かな自然のなかであなたもわたしもきっと笑顔になれるはず。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon.ico">
@@ -63,14 +63,54 @@
 			<div class="contents">
 				<h2 class="sec-title"><span>体験プログラム一覧</span></h2>
 				<p class="program-description">テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。</p>
-				<div class="program-wrap">
+				
+				<ul class="flex-box internal-btn-wrap">
+					<li class="flex-item"><a class="btn btn-internal" href="#mikakugari">味覚狩り</a></li>
+					<li class="flex-item"><a class="btn btn-internal"  href="#cook">料理体験</a></li>
+				</ul>
+				
+				
+				<div class="program-wrap" id="mikakugari">
 					<h3>味覚狩り</h3>
+					<p class="syuukaku-check">農作物については<a href="./syuukaku_list.html">こちら</a>もチェック！</p>
 					<ul class="box-parent">
+						<li class="box-child">
+							<div class="label junbi"><img src="./img/program1.jpg" alt="画像1の説明"></div>
+							<p class="title">いちご狩り</p>
+							<p class="description">テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。テキスト。</p>
+							<a class="btn btn-mini" href="#modal1">MORE</a>
+							<!-- モーダルに出てくる内容 -->
+							<div class="remodal" data-remodal-id="modal1">
+								<div class="flex-box">
+									<div class="flex-item img">
+										<img src="img/program1.jpg">
+										<img src="img/program1.jpg">
+									</div>
+									<div class="flex-item text">
+										<h4>梨狩り</h4>
+										<p class="description">甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。</p>
+										<dl>
+											<dt>開催時期</dt>
+											<dd>〇月下旬～〇月上旬</dd>
+											<dt>料金</dt>
+											<dd>大人〇〇円<br>小学生以下〇〇円</dd>
+											<dt>予約</dt>
+											<dd>不要</dd>
+											<dt>備考</dt>
+											<dd>テストテストテスト</dd>
+										</dl>
+									</div>
+								</div>
+								<button data-remodal-action="close" class="remodal-close"></button>
+								<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+
+							</div>
+						</li>
 						<li class="box-child">
 							<img src="./img/program1.jpg" alt="画像1の説明">
 							<p class="title">梨狩り</p>
 							<p class="description">甘くておいしい梨が育っています。</p>
-							<a class="mini-btn" href="#modal">詳しく見る</a>
+							<a class="btn btn-mini" href="#modal">MORE</a>
 							<!-- モーダルに出てくる内容 -->
 							<div class="remodal" data-remodal-id="modal">
 								<div class="flex-box">
@@ -99,38 +139,149 @@
 							</div>
 						</li>
 						<li class="box-child">
-							<img src="./img/program2.jpg" alt="画像1の説明">
-							<p class="title">ピオーネ狩り</p>
-							<p class="description">強い甘みでありながら爽やかな酸味があり、すっきりとした味が特徴のブドウです。</p>
-							<a class="mini-btn" href="#">詳しく見る</a>
+							<img src="./img/program1.jpg" alt="画像1の説明">
+							<p class="title">梨狩り</p>
+							<p class="description">甘くておいしい梨が育っています。</p>
+							<a class="btn btn-mini" href="#modal">MORE</a>
+							<!-- モーダルに出てくる内容 -->
+							<div class="remodal" data-remodal-id="modal">
+								<div class="flex-box">
+									<div class="flex-item img">
+										<img src="img/program1.jpg">
+										<img src="img/program1.jpg">
+									</div>
+									<div class="flex-item text">
+										<h4>梨狩り</h4>
+										<p class="description">甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。</p>
+										<dl>
+											<dt>開催時期</dt>
+											<dd>〇月下旬～〇月上旬</dd>
+											<dt>料金</dt>
+											<dd>大人〇〇円<br>小学生以下〇〇円</dd>
+											<dt>予約</dt>
+											<dd>不要</dd>
+											<dt>備考</dt>
+											<dd>テストテストテスト</dd>
+										</dl>
+									</div>
+								</div>
+								<button data-remodal-action="close" class="remodal-close"></button>
+								<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+
+							</div>
 						</li>
 						<li class="box-child">
 							<img src="./img/program1.jpg" alt="画像1の説明">
 							<p class="title">梨狩り</p>
-							<p class="description">ここにボックス1で説明したい内容<br>ここにボックス1で説明したい内容</p>
-							<a class="mini-btn" href="#">詳しく見る</a>
+							<p class="description">甘くておいしい梨が育っています。</p>
+							<a class="btn btn-mini" href="#modal">MORE</a>
+							<!-- モーダルに出てくる内容 -->
+							<div class="remodal" data-remodal-id="modal">
+								<div class="flex-box">
+									<div class="flex-item img">
+										<img src="img/program1.jpg">
+										<img src="img/program1.jpg">
+									</div>
+									<div class="flex-item text">
+										<h4>梨狩り</h4>
+										<p class="description">甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。</p>
+										<dl>
+											<dt>開催時期</dt>
+											<dd>〇月下旬～〇月上旬</dd>
+											<dt>料金</dt>
+											<dd>大人〇〇円<br>小学生以下〇〇円</dd>
+											<dt>予約</dt>
+											<dd>不要</dd>
+											<dt>備考</dt>
+											<dd>テストテストテスト</dd>
+										</dl>
+									</div>
+								</div>
+								<button data-remodal-action="close" class="remodal-close"></button>
+								<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+
+							</div>
 						</li>
 						<li class="box-child">
 							<img src="./img/program1.jpg" alt="画像1の説明">
 							<p class="title">梨狩り</p>
-							<p class="description">ここにボックス1で説明したい内容</p>
-							<a class="mini-btn" href="#">詳しく見る</a>
+							<p class="description">甘くておいしい梨が育っています。</p>
+							<a class="btn btn-mini" href="#modal">MORE</a>
+							<!-- モーダルに出てくる内容 -->
+							<div class="remodal" data-remodal-id="modal">
+								<div class="flex-box">
+									<div class="flex-item img">
+										<img src="img/program1.jpg">
+										<img src="img/program1.jpg">
+									</div>
+									<div class="flex-item text">
+										<h4>梨狩り</h4>
+										<p class="description">甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。</p>
+										<dl>
+											<dt>開催時期</dt>
+											<dd>〇月下旬～〇月上旬</dd>
+											<dt>料金</dt>
+											<dd>大人〇〇円<br>小学生以下〇〇円</dd>
+											<dt>予約</dt>
+											<dd>不要</dd>
+											<dt>備考</dt>
+											<dd>テストテストテスト</dd>
+										</dl>
+									</div>
+								</div>
+								<button data-remodal-action="close" class="remodal-close"></button>
+								<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+
+							</div>
+						</li>
+						<li class="box-child">
+							<img src="./img/program1.jpg" alt="画像1の説明">
+							<p class="title">梨狩り</p>
+							<p class="description">甘くておいしい梨が育っています。</p>
+							<a class="btn btn-mini" href="#modal">MORE</a>
+							<!-- モーダルに出てくる内容 -->
+							<div class="remodal" data-remodal-id="modal">
+								<div class="flex-box">
+									<div class="flex-item img">
+										<img src="img/program1.jpg">
+										<img src="img/program1.jpg">
+									</div>
+									<div class="flex-item text">
+										<h4>梨狩り</h4>
+										<p class="description">甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。甘くておいしい梨が実っています。</p>
+										<dl>
+											<dt>開催時期</dt>
+											<dd>〇月下旬～〇月上旬</dd>
+											<dt>料金</dt>
+											<dd>大人〇〇円<br>小学生以下〇〇円</dd>
+											<dt>予約</dt>
+											<dd>不要</dd>
+											<dt>備考</dt>
+											<dd>テストテストテスト</dd>
+										</dl>
+									</div>
+								</div>
+								<button data-remodal-action="close" class="remodal-close"></button>
+								<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+
+							</div>
 						</li>
 					</ul>
-					<a class="btn" href="./syuukaku_list.html">農作物についてはこちらもチェック！</a>
 			</div>
 				
 				
 				
 				
-				<div class="program-wrap">
+				<div class="program-wrap" id="cook">
 					<h3>料理体験</h3>
 					<ul class="box-parent">
 						<li class="box-child">
-							<img src="./img/program3.jpg" alt="画像1の説明">
+							<div class="img  label-open">
+								<img src="./img/program3.jpg" alt="画像1の説明">
+							</div>
 							<p class="title">梨狩り</p>
 							<p class="description">甘くておいしい梨が育っています。</p>
-							<a class="mini-btn" href="#modal">詳しく見る</a>
+							<a class="mini-btn" href="#modal">MORE</a>
 							<!-- モーダルに出てくる内容 -->
 							<div class="remodal" data-remodal-id="modal">
 								<div class="flex-box">
@@ -161,19 +312,19 @@
 							<img src="./img/program4.jpg" alt="画像1の説明">
 							<p class="title">ピオーネ狩り</p>
 							<p class="description">強い甘みでありながら爽やかな酸味があり、すっきりとした味が特徴のブドウです。</p>
-							<a class="mini-btn" href="#">詳しく見る</a>
+							<a class="mini-btn" href="#">MORE</a>
 						</li>
 						<li class="box-child">
 							<img src="./img/program1.jpg" alt="画像1の説明">
 							<p class="title">梨狩り</p>
 							<p class="description">ここにボックス1で説明したい内容<br>ここにボックス1で説明したい内容</p>
-							<a class="mini-btn" href="#">詳しく見る</a>
+							<a class="mini-btn" href="#">MORE</a>
 						</li>
 						<li class="box-child">
 							<img src="./img/program1.jpg" alt="画像1の説明">
 							<p class="title">梨狩り</p>
 							<p class="description">ここにボックス1で説明したい内容</p>
-							<a class="mini-btn" href="#">詳しく見る</a>
+							<a class="mini-btn" href="#">MORE</a>
 						</li>
 					</ul>
 				</div>

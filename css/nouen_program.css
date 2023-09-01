@@ -18,7 +18,19 @@
 /************************************************************/
 /*nouen_program*/
 /************************************************************/
-#nouen_program .description{
+#nouen_program .program-description{
+	margin-bottom: 80px;
+}
+
+#nouen_program .program-wrap{
+	margin-bottom: 80px;
+}
+
+#nouen_program h3{
+	font-size: clamp( 2.4rem, 2.4vw, 4.2rem) ;
+	padding-bottom: 10px;
+  letter-spacing: 0.1em;
+	border-bottom: 5px dashed var(--bg-color);
 	margin-bottom: 40px;
 }
 
@@ -63,6 +75,7 @@
 }
 .remodal .img img{
 	margin-bottom: 20px;
+	border-radius: 20px;
 }
 .remodal .text{
 	flex: 1;
@@ -83,11 +96,11 @@
 .remodal dl dd{
 	border: 1px solid #fff;
 	padding: 10px;
-	text-align: center;
 }
 .remodal dl dt{
 	width: 30%;
 	background-color: #bbb;
+	text-align: center;
 }
 .remodal dl dd{
 	width: 70%;

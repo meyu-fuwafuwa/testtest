@@ -57,23 +57,27 @@
 /*pickup*/
 /************************************************************/
 
-#pickup .flex-box {
-	align-items: flex-start;
-}
-#pickup .flex-item {
+
+#pickup li {
 	padding: 0 10px;
-	width: 32%;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
 }
 
 #pickup .pickup-img{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 #pickup .title{
 	font-size: 2.0rem;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 #pickup .description{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	flex-grow: 1;
+}
+#pickup .mini-btn{
+	margin-top: auto;
 }
 
 

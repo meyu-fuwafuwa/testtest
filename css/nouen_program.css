@@ -18,16 +18,12 @@
 /************************************************************/
 /*nouen_program*/
 /************************************************************/
-#nouen_program .program-description{
-	margin-bottom: 40px;
-}
-
 #nouen_program .internal-btn-wrap{
 	margin-bottom: 40px;
 }
 
 #nouen_program .program-wrap{
-	padding: 40px 0;
+	padding-top: 80px;
 }
 
 #nouen_program h3{
@@ -35,7 +31,7 @@
 	padding-bottom: 10px;
   letter-spacing: 0.1em;
 	border-bottom: 5px dashed var(--bg-color);
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 #nouen_program .syuukaku-check a{
@@ -43,30 +39,24 @@
 	color: #b22222;
 }
 
-#nouen_program ul.box-parent{
+#nouen_program ul.flex-box.program-box{
   	display:flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
 }
-#nouen_program ul.box-parent li.box-child{
+#nouen_program ul.flex-box.program-box li.flex-item{
 	width:25%;
-	height:auto;
-	display:flex;
-	flex-direction:column;
 	margin-bottom: 40px;
 	padding: 10px;
 }
 
-#nouen_program ul.box-parent li.box-child img{
+#nouen_program ul.flex-box.program-box li.flex-item img{
   margin-bottom: 10px;
 }
-#nouen_program ul.box-parent li.box-child .title{
+#nouen_program ul.flex-box.program-box li.flex-item .title{
+	text-align: center;
   font-size: 2.0rem;
 	margin-bottom: 10px;
-}
-#nouen_program ul.box-parent li.box-child .description{
-  width:100%;
-  flex-grow:1;
-  margin-bottom: 10px;
 }
 
 .remodal{
@@ -79,14 +69,11 @@
 	align-items: flex-start;
 }
 .remodal .img{
-	width: 250px;
 }
 .remodal .img img{
 	margin-bottom: 20px;
-	border-radius: 20px;
 }
 .remodal .text{
-	flex: 1;
 	text-align: left;
 	padding-left: 20px;
 	margin-bottom: 20px;
@@ -125,7 +112,7 @@
 /************************************************************/
 @media screen and ( max-width: 1279px) and (min-width: 768px){
 
-	#nouen_program ul.box-parent li.box-child{
+	#nouen_program ul.flex-box.program-box li.flex-item{
 		width:50%;
 	}
 
@@ -138,10 +125,10 @@
 		height: 250px;
 	}
 	
-	#nouen_program ul.box-parent{
+	#nouen_program ul.flex-box.program-box{
 		flex-direction:column; 
 	}
-	#nouen_program ul.box-parent li.box-child{
+	#nouen_program ul.flex-box.program-box li.flex-item{
 		width:100%;
 	}
 	

@@ -225,11 +225,11 @@ section:last-child{
 	font-weight: normal;
 }
 .label.open::after {
-    content: "開催中";
+    content: "開催中！";
 	background-color: #b22222;
 }
 .label.new::after {
-    content: "NEW!";
+    content: "NEW！";
 	background-color: #00ced1;
 }
 .label.junbi::after {

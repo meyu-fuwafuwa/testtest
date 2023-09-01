@@ -18,8 +18,9 @@
 /************************************************************/
 /*nouen_program*/
 /************************************************************/
-#nouen_program .internal-btn-wrap{
-	margin-bottom: 40px;
+#nouen_program .internal-btn-wrap li.flex-item{
+	width: 32%;
+	margin-bottom: 20px;
 }
 
 #nouen_program .program-wrap{
@@ -123,6 +124,10 @@
 @media screen and (max-width: 767px){
 	#mainvisual{
 		height: 250px;
+	}
+	
+	#nouen_program .internal-btn-wrap li.flex-item{
+		width: 100%;
 	}
 	
 	#nouen_program ul.flex-box.program-box{

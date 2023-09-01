@@ -13,12 +13,16 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
 });
 
-//pagetop
+// #で始まるアンカーをクリックした場合に処理
 $(function(){
-  var pagetop = $('#footer-pagetop');
-  pagetop.click(function () {
-     $('body, html').animate({ scrollTop: 0 }, 500);
-     return false;
+  $('a[href^="#"]').click(function(){
+    var adjust = 0;
+    var speed = 500; // ミリ秒
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top + adjust;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
   });
 });
 

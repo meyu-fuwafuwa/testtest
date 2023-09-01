@@ -236,6 +236,10 @@ section:last-child{
     content: "準備中";
 	background-color: #b8860b;
 }
+.label.finish::after {
+    content: "今年終了";
+	background-color: #b8860b;
+}
 
 
 /************************************************************/

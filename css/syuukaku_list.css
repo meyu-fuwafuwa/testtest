@@ -46,7 +46,7 @@
 	flex-direction: row-reverse;
 }
 #syuukaku_list .flex-item{
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 #syuukaku_list li .img{
 	width: 55%;
@@ -70,7 +70,7 @@
 
 #syuukaku_list li .text {
 	width: 45%;
-	padding: 180px 4% 0 4%;
+	padding: 0 4%;
 }
 
 /************************************************************/

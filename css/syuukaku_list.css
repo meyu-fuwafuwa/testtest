@@ -103,7 +103,10 @@
 	#syuukaku_list li .img,
 	#syuukaku_list li .text{
 		width: 100%;
-		padding: 10px 4%;
+		padding: 0 4%;
+	}
+	#syuukaku_list li .img{
+		margin-bottom: 20px;
 	}
 }
 

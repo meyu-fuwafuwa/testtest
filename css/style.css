@@ -1,14 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/*
+z-indexのルール
+
+背面要素 : -10 ～ -1
+基準値 : 0
+普段使うもの : 1 ～ 10
+ハンバーガーメニュー押下:998, 999
+header : 1000
+
+*/
+
+
 @font-face {
-  font-family: 'M_PLUS_Rounded';
-  src: url('../font/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf') format('truetype');
+	font-family: 'M_PLUS_Rounded';
+	src: url('../font/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf') format('truetype');
 }
 
 :root {
-  --accent-color: #A8DF8E;
-  --bg-color: #FFBFBF;
+	--accent-color: #A8DF8E;
+	--bg-color: #FFBFBF;
 }
 
 /************************************************************/
@@ -54,19 +67,21 @@ body{
 a{
 	color: #333;
 }
+
 p{
 	margin-bottom: 20px;
 }
+
 .contents{
 	margin: 0 auto;
 	padding: 0 4%;
 	max-width: 1280px;
 }
-main{
-}
+
 section{
 	padding: 80px 0;
 }
+
 section:last-child{
 	padding-bottom: 120px;
 }
@@ -88,6 +103,7 @@ section:last-child{
 	width: 120px;
 	line-height: 1px;
 }
+
 .site-title a {
 	display: block;
 }
@@ -101,24 +117,19 @@ section:last-child{
 	display: inline-block;
 	font-size: clamp( 2.4rem, 2.4vw, 4.2rem) ;
 	padding-bottom: 10px;
-  letter-spacing: 0.1em;
+	letter-spacing: 0.1em;
 	border-bottom: 5px dashed var(--accent-color);
-  padding: 0 0 0 1.5em;
+	padding: 0 0 0 1.5em;
 	background-image: url("../img/leaf.svg");
-  background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: contain;
-  background-position: left center;
+	background-position: left center;
 }
 
 .contents-title{
 	text-align: center;
 	font-size: clamp( 2.4rem, 2.4vw, 4.2rem) ;
 	margin-bottom: 40px;
-	background-image: url("../img/point.png");
-	background-position: top center;
-	background-size: 200px 73px;
-	background-repeat: no-repeat;
-	padding-top: 75px;
 }
 
 /*正円*/
@@ -161,8 +172,6 @@ section:last-child{
 }
 
 .btn:hover {
-  	color: #333;
-	border: 5px solid var(--accent-color);
 	background-color: #fff;
 }
 
@@ -172,8 +181,9 @@ section:last-child{
 }
 
 .btn.btn-internal:hover {
-	border: 5px solid var(--bg-color);
+	background-color: #fff;
 }
+
 .btn.btn-internal:before {
   content: '';
   width: 6px;
@@ -193,25 +203,11 @@ section:last-child{
 	font-size: 1.6rem;
 }
 
-
-
-/*フェードイン用*/
-.fadein {
-	opacity : 0;
-	transform : translate(0, 50px);
-	transition : all 0.5s;
-}
- 
-.fadein.active{
-	opacity : 1;
-	transform : translate(0, 0);
-}
-
-
 /*ラベル関係*/
 .label{
 	position: relative;
 }
+
 .label::after {
     content: "";
     display: block;
@@ -221,21 +217,25 @@ section:last-child{
     color: #fff;
 	background-color: #000;
 	padding: 10px;
-    z-index: 101;
+    z-index: 1;
 	font-weight: normal;
 }
+
 .label.open::after {
     content: "開催中！";
 	background-color: #b22222;
 }
+
 .label.new::after {
     content: "NEW！";
 	background-color: #00ced1;
 }
+
 .label.junbi::after {
     content: "準備中";
 	background-color: #b8860b;
 }
+
 .label.finish::after {
     content: "今年終了";
 	background-color: #b8860b;
@@ -249,7 +249,7 @@ section:last-child{
 .header-wrap{
 	width: 100%;
 	position: fixed;
-	z-index: 9999;
+	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -290,7 +290,7 @@ section:last-child{
     left: 14px;
     height: 3px;
     border-radius: 2px;
-	background-color: #fff;
+	background-color: #333;
   	width: 45%;
 }
 
@@ -335,7 +335,7 @@ section:last-child{
 
 .circle-bg{
     position: fixed;
-	z-index:200;
+	z-index:998;
     /*丸の形*/
     width: 100px;
     height: 100px;
@@ -408,7 +408,7 @@ section:last-child{
 	font-size: clamp( 1.6rem, 2vw, 3.2rem) ;
 }
 #g-nav li a:hover{
-	opacity: 0.5;
+	text-decoration: underline; 
 }
 
 
@@ -434,7 +434,7 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 5;
+    z-index: 1;
 }
 #footer-pagetop:hover{
 	opacity: 1;
@@ -450,28 +450,16 @@ footer{
 footer .site-title{
 	margin: 0 auto 40px;
 }
-.footer-wrap{
+footer .footer-wrap{
 	padding: 80px 4% 0;
 	background-color: var(--accent-color);
-}
-.footer-title {
-	width: 200px;
-	line-height: 1px;
-	margin-bottom: 15px;
-}
-.footer-title a {
-	display: block;
 }
 footer ul{
 	margin-bottom: 40px;
 }
 footer ul li{
 	display: inline-block;
-	margin-right: 20px;
-	margin-bottom: 20px;
-}
-footer ul li:last-child{
-	margin-right: 0;
+	margin: 0 10px 20px;
 }
 footer ul li a{
     color: #333;

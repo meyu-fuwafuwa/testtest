@@ -15,8 +15,8 @@ var $slide_mainvisual = $(".slide")
     infinite: true         // 無限リピート オン・オフ
   });
 
-//slick(pickup)
-var $slide_pickup = $(".slide-pickup")
+//slick(news)
+var $slide_news = $(".slide-news")
   .slick({
     autoplay:true,
     arrows: false,
@@ -44,7 +44,7 @@ var $slide_pickup = $(".slide-pickup")
 
 
 //slick(recruit)
-var $slide_recruit = $("#js-slider-8")
+var $slide_recruit = $("#js-slider-recruit")
   .slick({
     arrows: false, // 前・次のボタンを表示しない
     dots: false, // ドットナビゲーションを表示しない

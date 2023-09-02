@@ -55,22 +55,22 @@
 #syuukaku_list li .img img,
 #syuukaku_list li .img .shadow{
 	width: 100%;
-  height: 400px;
-  object-fit: cover;
+	height: 400px;
+	object-fit: cover;
 	border-radius:36% 43% 41% 32% / 33% 33% 34% 53%;
 }
 #syuukaku_list li .img .shadow{
-  position: absolute;
-  top:0;
-  background-image: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 255, 255, 1) 5px, rgba(255, 255, 255, 1) 10px );
+	position: absolute;
+	top:0;
+	background-image: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 255, 255, 1) 5px, rgba(255, 255, 255, 1) 10px );
 	background-color: var(--bg-color);
-  z-index: -1;
-  transform: translateX(20px) translateY(20px);
+	z-index: -1;
+	transform: translateX(20px) translateY(20px);
 }
 
 #syuukaku_list li .text {
-  width: 45%;
-  padding: 180px 4% 0 4%;
+	width: 45%;
+	padding: 180px 4% 0 4%;
 }
 
 /************************************************************/

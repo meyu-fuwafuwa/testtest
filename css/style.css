@@ -257,7 +257,7 @@ section:last-child{
 	left:50%;
 	transform:translate(-50%,-50%);
 	color: #fff;
-	font-size: clamp( 2.4rem, 2.4vw, 4.2rem);
+	font-size: clamp( 2.4rem, 2.4vw, 4.8rem);
 	letter-spacing: 0.1em;
 }
 /*breadcrumb　（パンくずリスト）*/

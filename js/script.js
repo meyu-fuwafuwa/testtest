@@ -25,3 +25,7 @@ $(function(){
     return false;
   });
 });
+
+function dummy(){
+	alert("ダミーのリンクです。\nこの先のページは制作しておりません。");
+}

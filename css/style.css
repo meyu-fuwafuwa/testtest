@@ -125,12 +125,6 @@ section:last-child{
 	background-position: left center;
 }
 
-.contents-title{
-	text-align: center;
-	font-size: clamp( 2.4rem, 2.4vw, 4.2rem);
-	margin-bottom: 40px;
-}
-
 /*正円*/
 .circle {
     position: relative;
@@ -168,6 +162,7 @@ section:last-child{
 	width: 100%;
 	max-width: 500px;
 	margin: 0 auto;
+	cursor: pointer;
 }
 
 .btn:hover {
@@ -238,6 +233,59 @@ section:last-child{
 .label.finish::after {
     content: "今年終了";
 	background-color: #b8860b;
+}
+
+
+/************************************************************/
+/*subpage-title*/
+/************************************************************/
+.subpage-title{
+	height: 250px;
+	position: relative;
+	margin-bottom: 20px;
+	background-color: #000;
+}
+.subpage-title img{
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.7;
+}
+.subpage-title h2{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	color: #fff;
+	font-size: clamp( 2.4rem, 2.4vw, 4.2rem);
+	letter-spacing: 0.1em;
+}
+/*breadcrumb　（パンくずリスト）*/
+.breadcrumb {
+	padding: 10px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+}
+
+.breadcrumb li {
+	display: inline;
+}
+
+.breadcrumb li:after {
+	content: '>';
+	padding: 0 10px;
+}
+
+.breadcrumb li:last-child:after {
+	content: '';
+}
+
+.breadcrumb li a {
+	color: #fff;
+}
+.breadcrumb li a:hover {
+	text-decoration: underline;
 }
 
 
@@ -401,10 +449,10 @@ section:last-child{
 
 #g-nav li a{
 	color: #333;
-	padding:10px;
+	padding: 10px 0;
 	display: block;
 	font-weight: bold;
-	font-size: clamp( 2.4rem, 2.4vw, 4.2rem);
+	font-size: 2.0rem;
 }
 #g-nav li a:hover{
 	text-decoration: underline; 
@@ -479,6 +527,8 @@ footer .copyright{
 }
 
 
+
+
 /************************************************************/
 /*pc*/
 /************************************************************/
@@ -501,6 +551,9 @@ footer .copyright{
 @media screen and (max-width: 767px){
 	.sp-none{
 		display: none;
+	}
+	#mainvisual-sub{
+		height: 250px;
 	}
 }
 

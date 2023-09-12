@@ -96,12 +96,15 @@
 	background-color: var(--bg-color);
 	padding: 120px 0;
 }
-#features .contents-title{
+#features h3{
 	background-image: url("../img/point.png");
 	background-position: top center;
 	background-size: 200px 73px;
 	background-repeat: no-repeat;
 	padding-top: 75px;
+	text-align: center;
+	font-size: clamp( 2.4rem, 2.4vw, 4.2rem);
+	margin-bottom: 40px;
 }
 #features .features-wrap{
 	padding: 40px 5%;

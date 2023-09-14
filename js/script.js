@@ -1,5 +1,6 @@
 // JavaScript Document
 
+
 //humberger
 $(".openbtn").click(function () {//ボタンがクリックされたら
 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し

@@ -277,8 +277,13 @@ section:last-child{
 	left:50%;
 	transform:translate(-50%,-50%);
 	color: #fff;
-	font-size: clamp( 2.4rem, 2.4vw, 4.8rem);
 	letter-spacing: 0.1em;
+	font-size: 2.8rem;
+	color: #fff;
+	text-shadow: 2px  2px 3px #333,
+		-2px  2px 3px #333,
+		 2px -2px 3px #333,
+		-2px -2px 3px #333;
 }
 /*breadcrumb　（パンくずリスト）*/
 .breadcrumb {
@@ -489,7 +494,6 @@ section:last-child{
 	padding: 10px 0;
 	display: block;
 	font-weight: bold;
-	font-size: 2.0rem;
 }
 #g-nav li a:hover{
 	text-decoration: underline; 
@@ -506,7 +510,6 @@ section:last-child{
 footer{
 	color: #fff;
 	position: relative;
-	text-align: center;
 }
 footer a{
 	color: #fff;
@@ -535,12 +538,55 @@ footer a{
 	margin-bottom: 5px;
 }
 footer .site-title{
-	margin: 0 auto 40px;
+	margin-bottom: 40px;
 	width: 50%;
 }
+
 footer .footer-wrap{
 	padding: 80px 4% 0;
 	background-color: var(--accent-color);
+}
+footer .tel{
+	font-size: 2.4rem;
+}
+
+footer .flex-box{
+	align-items: flex-start;
+}
+
+footer .flex-item{
+	width: 32%;
+	margin-bottom: 40px;
+}
+
+footer ul li{
+	margin-bottom: 10px; 
+	list-style-type: disc;
+	margin-left: 1em;
+}
+footer ul li a:hover{
+	text-decoration: underline;
+}
+
+.footer-btn{
+	background-image: url("../img/cart.svg");
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: 10px center;
+	background-color: var(--accent-color);
+	padding: 10px 50px;
+	margin: 0 auto;
+	color: #fff;
+	transition-duration: 0.3s;
+	display: block;
+	border: 3px solid #fff;
+	text-align: center;
+}
+.footer-btn.contact{
+	background-image: url("../img/mail.svg");
+}
+.footer-btn:hover{
+	opacity: 0.7;
 }
 
 footer .copyright{
@@ -588,6 +634,10 @@ footer .copyright{
 		height: 250px;
 	}
 	
+	
+	footer .site-title{
+		margin: 0 auto 40px;
+	}
 	footer .flex-box{
 		flex-direction: column;
 	}

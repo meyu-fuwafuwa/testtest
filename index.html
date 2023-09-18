@@ -23,18 +23,17 @@
 					<img src="img/logo.png" alt="ロゴマーク">
 				</a>
 			</h1>
-			<div class="header-list sp-none">
+			<div class="header-list pc-only">
 				<ul>
 					<li><a href="./index.html#news">お知らせ</a></li>
 					<li><a href="./syuukaku_list.html">農作物</a></li>
 					<li><a href="./nouen_program.html">体験プログラム</a></li>
-					<li><a href="javascript:dummy();">オンラインショップ</a></li>
-					<li><a href="./index.html#recruit">採用情報</a></li>
 					<li><a href="javascript:dummy();">アクセス</a></li>
-					<li><a href="./contact.html">お問い合わせ</a></li>
 				</ul>
+				<a href="javascript:dummy();" class="header-btn cart">オンラインショップ</a>
+				<a href="./contact.html" class="header-btn contact">お問い合わせ</a>
 			</div>
-			<div class="openbtn sp-only"><span></span><span></span><span></span></div>
+			<div class="openbtn pc-none"><span></span><span></span><span></span></div>
 		</div>
 		<nav id="g-nav">
 			<div id="g-nav-list">
@@ -77,38 +76,33 @@
 		<section id="news">
 			<div class="contents">
 				<h2 class="sec-title" data-en="News"><span>お知らせ</span></h2>
-				<ul class="slide-news">
-					<li>
-						<div class="img label new">
-							<img src="img/news1.jpg" alt="梨狩り">
-						</div>
-						<p class="title">梨狩り開園しました</p>
-						<p class="description">８月２９日から９月中旬まで梨狩りを開園いたします。甘くておいしい梨が育っています。皆さまのお越しをお待ちしております。</p>
-						<a class="btn" href="javascript:dummy();">MORE</a>
+				<ul class="flex-box">
+					<li class="flex-item">
+						<a href="javascript:dummy();">
+							<div class="img label new">
+								<img src="img/news1.jpg" alt="梨狩り">
+							</div>
+							<p class="title">梨狩り開園しました</p>
+							<p class="description">８月２９日から９月中旬まで梨狩りを開園いたします。甘くておいしい梨が育っています。皆さまのお越しをお待ちしております。</p>
+						</a>
 					</li>
-					<li>
-						<div class="img label new">
-							<img src="img/news2.jpg" alt="ピオーネ狩り">
-						</div>
-						<p class="title">ピオーネ狩り開園しました</p>
-						<p class="description">９月１日からピオーネ狩りを開園いたします。強い甘みでありながら爽やかな酸味があり、すっきりとした味が特徴のブドウです。</p>
-						<a class="btn" href="javascript:dummy();">MORE</a>
+					<li class="flex-item">
+						<a href="javascript:dummy();">
+							<div class="img label new">
+								<img src="img/news2.jpg" alt="ピオーネ狩り">
+							</div>
+							<p class="title">ピオーネ狩り開園しました</p>
+							<p class="description">９月１日からピオーネ狩りを開園いたします。強い甘みでありながら爽やかな酸味があり、すっきりとした味が特徴のブドウです。</p>
+						</a>
 					</li>
-					<li>
-						<div class="img">
-							<img src="img/news-important.png" alt="お知らせ（重要）">
-						</div>
-						<p class="title">８月１５日は休園です</p>
-						<p class="description">８月１５日は台風のため、休園いたします。</p>
-						<a class="btn" href="javascript:dummy();">MORE</a>
-					</li>
-					<li>
-						<div class="img">
-							<img src="img/news-oshirase.png" alt="お知らせ">
-						</div>
-						<p class="title">ホームページリニューアルのお知らせ</p>
-						<p class="description">ホームページをリニューアルいたしました♪</p>
-						<a class="btn" href="javascript:dummy();">MORE</a>
+					<li class="flex-item">
+						<a href="javascript:dummy();">
+							<div class="img">
+								<img src="img/news-important.png" alt="お知らせ（重要）">
+							</div>
+							<p class="title">８月１５日は休園です</p>
+							<p class="description">８月１５日は台風のため、休園いたします。</p>
+						</a>
 					</li>
 				</ul>
 				<div class="btn-wrap">
@@ -125,7 +119,8 @@
 					
 					<div class="season point-item-wrap">
 						<h3 class="num-title" data-number="01"><span>季節の野菜・フルーツ</span></h3>
-						<p>あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。</p>
+						<p>あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。消費地に近い利点を活かし、出荷直前まで熟させることができます。</p>
+						<a href="./syuukaku_list.html" class="btn">農作物一覧</a>
 						<ul class="flex-box">
 							<li class="flex-item circle">
 								<img src="img/harvest1.jpg" alt="いちご">
@@ -143,7 +138,6 @@
 								<img src="img/harvest5.jpg" alt="さつまいも">
 							</li>
 						</ul>
-						<a href="./syuukaku_list.html" class="btn">農作物一覧</a>
 					</div>
 					
 					<div class="program point-item-wrap">

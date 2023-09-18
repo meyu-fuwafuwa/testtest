@@ -1,33 +1,5 @@
 // JavaScript Document
 
-//slick(news)
-var $slide_news = $(".slide-news")
-  .slick({
-    autoplay:true,
-    arrows: false,
-    centerMode: true,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    slidesToShow: 3,
-    speed: 500,   // 画像切り替えにかかる時間（ミリ秒）
-    autoplaySpeed: 5000,   // 自動スライド切り替え速度
-	responsive: [
-      {
-        breakpoint: 1280, // 480〜767px以下のサイズに適用
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768, // 〜479px以下のサイズに適用
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-
 //slick(recruit)
 var $slide_recruit = $("#js-slider-recruit")
   .slick({

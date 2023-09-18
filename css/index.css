@@ -48,11 +48,15 @@
 /************************************************************/
 /*news*/
 /************************************************************/
-#news li {
-	padding: 0 10px;
+#news .flex-box{
+	align-items: flex-start;
+}
+#news .flex-item {
+	width: 32%;
 	margin-bottom: 40px;
-	display: flex;
-	flex-direction: column;
+}
+#news .flex-item:hover{
+	opacity: 0.8;
 }
 
 #news .img{
@@ -61,19 +65,13 @@
 #news .title{
 	font-size: 2.0rem;
 	margin-bottom: 10px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #news .description{
 	margin-bottom: 10px;
 	flex-grow: 1;
-}
-#news .mini-btn{
-	margin-top: auto;
-}
-#news .slick-track {
-	display: flex;
-}
-#news .slick-slide {
-	height: auto !important;
 }
 
 
@@ -103,6 +101,7 @@
 
 #point .season .flex-box{
 	justify-content: center;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -231,6 +230,14 @@
 	/*about*/
 	#about p{
 		font-size: 1.6rem;
+	}
+	
+	/*news*/
+	#news .flex-box{
+		flex-direction: column;
+	}
+	#news .flex-item {
+		width: 100%;
 	}
 	
 	/*point*/

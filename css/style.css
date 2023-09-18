@@ -179,7 +179,6 @@ section:last-child{
 	height: 50px;
 	position: relative;
 	background: var(--accent-color);
-	border: 3px solid var(--accent-color);
 	border-radius: 30px;
 	color: #fff;
 	font-size: 16px;
@@ -204,19 +203,13 @@ section:last-child{
 }
 
 .btn:hover {
-	background-color: #fff;
-	color: var(--accent-color);;
+	opacity: 0.7;
 }
 
-.btn:hover::after{
-	border-top: 2px solid var(--accent-color);;
-	border-right: 2px solid var(--accent-color);;
-}
 
 .btn.btn-internal {
 	color: #333;
 	background-color: var(--bg-color);
-	border: 3px solid var(--bg-color);
 }
 .btn.btn-internal::after{
 	border-top: 2px solid #333;
@@ -224,9 +217,6 @@ section:last-child{
 	transform: rotate(135deg);
 }
 
-.btn.btn-internal:hover {
-	background-color: #fff;
-}
 
 /*ラベル関係*/
 .label{
@@ -333,7 +323,10 @@ section:last-child{
 	align-items: center;
 	padding: 10px;
 }
-
+.header-list{
+	display: flex;
+	align-items: center;
+}
 .header-list ul{
 	display: flex;
 }
@@ -345,12 +338,31 @@ section:last-child{
 
 .header-list ul li:last-child{
 	border-right: 0;
-	padding-right: 0;
 }
 .header-list ul li a:hover{
 	text-decoration: underline;
 }
 
+.header-btn{
+	background-image: url("../img/cart.svg");
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: 10px center;
+	background-color: var(--accent-color);
+	padding: 10px 10px 10px 50px;
+	margin: 0 5px;
+	color: #fff;
+	transition-duration: 0.3s;
+}
+.header-btn.cart{
+	background-image: url("../img/cart.svg");
+}
+.header-btn.contact{
+	background-image: url("../img/mail.svg");
+}
+.header-btn:hover{
+	opacity: 0.7;
+}
 
 .openbtn{
 	position:relative;
@@ -549,6 +561,9 @@ footer .copyright{
 	.sp-only{
 		display: none;
 	}
+	.pc-none{
+		display: none;
+	}
 }
 /************************************************************/
 /*tablet*/
@@ -557,12 +572,18 @@ footer .copyright{
 	.sp-only{
 		display: none;
 	}
+	.pc-only{
+		display: none;
+	}
 }
 /************************************************************/
 /*sp*/
 /************************************************************/
 @media screen and (max-width: 767px){
 	.sp-none{
+		display: none;
+	}
+	.pc-only{
 		display: none;
 	}
 	#mainvisual-sub{

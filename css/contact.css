@@ -28,6 +28,9 @@
 #contact .contact-tel .tel-number{
 	font-size: 2.4rem;
 }
+#contact .contact-tel .tel-number a{
+	color: var(--accent-color);
+}
 
 #contact dl{
 	align-items: flex-start;

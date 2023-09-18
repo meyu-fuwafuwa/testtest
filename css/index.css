@@ -5,37 +5,29 @@
 /************************************************************/
 /*mainvisual*/
 /************************************************************/
-#mainvisual{
-	background-image: url("../img/bg-rt.png");
-	background-position: right top;
-	background-repeat: no-repeat;
+#mainvisual .mainvisual-wrap{
+	position: relative;
 }
-
-#mainvisual .flex-left{
-	width: 70%;
-}
-#mainvisual .flex-right{
-	width: 30%;
-	padding: 10px;
-}
-
-#mainvisual ul li{
-	width: 100%;
+#mainvisual .img{
 	height: 800px;
 }
-#mainvisual ul li img{
-	height: 100%;
+#mainvisual .img img{
 	object-fit: cover;
-	border-radius: 0 30px 30px 0;
+	height: 100%;
 }
-#mainvisual .logo{
-	margin-bottom: 20px;
-}
-#mainvisual .tategaki{
-	font-size: 3.2rem;
-	line-height: 1.5;
-	margin: 0 auto;
-	writing-mode: vertical-rl;
+#mainvisual .text{
+	display: inline;
+	padding: 10px;
+	position: absolute;
+	top: 120px;
+	left: 250px;
+	line-height: 2.0;
+	font-size: 4.2rem;
+	color: #fff;
+	text-shadow: 2px  2px 3px #333,
+		-2px  2px 3px #333,
+		 2px -2px 3px #333,
+		-2px -2px 3px #333;
 }
 
 
@@ -213,7 +205,12 @@
 /************************************************************/
 @media screen and ( max-width: 1279px) and (min-width: 768px){
 
-
+	#mainvisual .text {
+		font-size: 3.2rem;
+		top: 70px;
+		left: 100px;
+		writing-mode: vertical-rl;
+	}
 }
 /************************************************************/
 /*sp*/
@@ -221,35 +218,16 @@
 @media screen and (max-width: 767px){
 
 	/*mainvisual*/
-	#mainvisual{
-		background: none;
+	#mainvisual .img{
+		height: 600px;
 	}
-	#mainvisual .flex-box{
-		flex-direction: column;
+	#mainvisual .text{
+		font-size: 3.2rem;
+		top: 50px;
+		left: 20px;
+		writing-mode: vertical-rl;
 	}
-	#mainvisual .flex-left{
-		width: 100%;
-	}
-	#mainvisual .flex-right{
-		background-image: url("../img/bg-rt.png");
-		background-position: right top;
-		background-repeat: no-repeat;
-		background-size: contain;
-		width: 100%;
-		padding-top: 20px;
-	}
-	#mainvisual ul li{
-		height: 400px;
-	}
-	#mainvisual ul li img{
-		border-radius: 0 ;
-	}
-	#mainvisual .tategaki{
-		font-size: 2.0rem;
-		writing-mode: horizontal-tb;
-		text-align: center
-	}
-
+	
 	/*about*/
 	#about p{
 		font-size: 1.6rem;

@@ -5,11 +5,10 @@
 /************************************************************/
 /*nouen_program*/
 /************************************************************/
-#nouen_program .internal-btn-wrap li.flex-item{
-	width: 32%;
-}
-#nouen_program .internal-btn-wrap li.flex-item:last-child{
-	margin-bottom: 0;
+
+
+#nouen_program .subpage-titlebox{
+	background-image: url("../img/mainvisual_nouen_program.jpg");
 }
 
 #nouen_program .program-wrap{
@@ -29,18 +28,13 @@
 	margin-bottom: 40px;
 }
 
-#nouen_program .syuukaku-check a{
-	text-decoration: underline;
-	color: #b22222;
-}
-
 #nouen_program ul.program-box{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 }
 #nouen_program ul.program-box li{
-	width:25%;
+	width:32%;
 	margin-bottom: 40px;
 	padding: 10px;
 	display: flex;

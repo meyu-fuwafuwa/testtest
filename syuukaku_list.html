@@ -15,7 +15,7 @@
 
 <body>
 	
-	
+
 	<header>
 		<div class="wrap header-wrap">
 			<h1 class="site-title">
@@ -30,8 +30,8 @@
 					<li><a href="./nouen_program.html">体験プログラム</a></li>
 					<li><a href="javascript:dummy();">アクセス</a></li>
 				</ul>
-				<a href="javascript:dummy();" class="header-btn cart">オンラインショップ</a>
-				<a href="./contact.html" class="header-btn contact">お問い合わせ</a>
+				<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
+				<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
 			</div>
 			<div class="openbtn pc-none"><span></span><span></span><span></span></div>
 		</div>
@@ -44,8 +44,8 @@
 						<li><a href="./nouen_program.html">体験プログラム</a></li>
 						<li><a href="javascript:dummy();">アクセス</a></li>
 					</ul>
-					<a href="javascript:dummy();" class="header-btn cart">オンラインショップ</a>
-					<a href="./contact.html" class="header-btn contact">お問い合わせ</a>
+					<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
+					<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
 				</div>
 			</div>
 		</nav>
@@ -55,25 +55,33 @@
 	<main>
 
 		<section id="syuukaku_list">
-			<div class="subpage-title">
-				<img src="./img/mainvisual_syuukaku_list.jpg" alt="タイトル背景">
-				<h2>農作物一覧</h2>
-				<div class="breadcrumb">
-				  <ol>
+			<div class="breadcrumb">
+				<ol>
 					<li><a href="./index.html">ホーム</a></li>
 					<li>農作物一覧</li>
-				  </ol>
+				</ol>
+			</div>
+			
+			<div class="subpage-titlebox">
+				<div class="subpage-titleitem">
+					<h2 class="sec-title" data-en="Harvest"><span>農作物一覧</span></h2>
+					<p class="description">あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。消費地に近い利点を活かし、出荷直前まで熟させることができます。</p>
+
+					<ul class="internal-btn-wrap">
+						<li><a class="btn btn-internal" href="#ichigo">いちご</a></li>
+						<li><a class="btn btn-internal"  href="#budou">ぶどう</a></li>
+						<li><a class="btn btn-internal"  href="#nashi">なし</a></li>
+						<li><a class="btn btn-internal" href="#ichijiku">いちじく</a></li>
+						<li><a class="btn btn-internal"  href="#imo">さつまいも</a></li>
+					</ul>
+					
 				</div>
 			</div>
 			
-			<div class="contents">
-				<p class="description">あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。消費地に近い利点を活かし、出荷直前まで熟させることができます。</p>
-			</div>
 			<ul class="syuukaku-wrap">
-				<li class="flex-box">
+				<li class="flex-box" id="ichigo">
 					<div class="img flex-item">
 						<img src="img/syuukaku_list_ichigo.jpg" alt="いちご">
-						<div class="shadow sp-none"></div>
 					</div>
 					<div class="text flex-item">
 						<h3><span>いちご（紅ほっぺ）</span></h3>
@@ -83,10 +91,9 @@
 						<p>しっかり着色しており、香りがよいものを選ぶのがオススメです。</p>
 					</div>
 				</li>
-				<li class="flex-box">
+				<li class="flex-box" id="budou">
 					<div class="img flex-item">
 						<img src="img/syuukaku_list_budou.jpg" alt="ぶどう">
-						<div class="shadow sp-none"></div>
 					</div>
 					<div class="text flex-item">
 						<h3><span>ぶどう（ピオーネ）</span></h3>
@@ -96,10 +103,9 @@
 						<p>鮮度の良いものは皮に白い粉が付いています。粒がふっくらとしていて、濃く色づいているものがオススメです。</p>
 					</div>
 				</li>
-				<li class="flex-box">
+				<li class="flex-box" id="nashi">
 					<div class="img flex-item">
 						<img src="img/syuukaku_list_nashi.jpg" alt="なし">
-						<div class="shadow sp-none"></div>
 					</div>
 					<div class="text flex-item">
 						<h3><span>なし（幸水）</span></h3>
@@ -108,10 +114,9 @@
 						<p>軸がしっかりとついており、果実に張りがあり固く締まっているものがオススメです。</p>
 					</div>
 				</li>
-				<li class="flex-box">
+				<li class="flex-box" id="ichijiku">
 					<div class="img flex-item">
 						<img src="img/syuukaku_list_ichijiku.jpg" alt="いちじく">
-						<div class="shadow sp-none"></div>
 					</div>
 					<div class="text flex-item">
 						<h3><span>いちじく（桝井ドーフィン）</span></h3>
@@ -120,10 +125,9 @@
 						<p>丸みがあり、付け根の切り口付近まで色づいているものがオススメです。少し割れていたり、割れ欠けているものは完熟しているので食べ頃です。</p>
 					</div>
 				</li>
-				<li class="flex-box">
+				<li class="flex-box" id="imo">
 					<div class="img flex-item">
 						<img src="img/syuukaku_list_imo.jpg" alt="さつまいも">
-						<div class="shadow sp-none"></div>
 					</div>
 					<div class="text flex-item">
 						<h3><span>さつまいも（紅はるか）</span></h3>
@@ -158,18 +162,31 @@
 						</div>
 						<p>
 							〒123-1234<br>
-							大阪府○○市○○XXX 1-2-3
-						</p>
-						<p><a href="tel:123-123-1234">TEL:123-123-1234</a></p>
-						<p>9:00 - 17:00</p>
-						<p>休園日：毎週火曜日、年末年始</p>
+							大阪府○○市○○XXX 1-2-3<br>
+							9:00 - 17:00<br>
+							休園日：毎週火曜日、年末年始</p>
+					</div>
+					
+					<div class="flex-item">
+						<p>サイトマップ</p>
+						<ul>
+							<li><a href="./index.html">トップページ</a></li>
+							<li><a href="./index.html#news">お知らせ</a></li>
+							<li><a href="./syuukaku_list.html">農作物</a></li>
+							<li><a href="./nouen_program.html">体験プログラム</a></li>
+							<li><a href="javascript:dummy();">アクセス</a></li>
+							<li><a href="javascript:dummy();">オンラインショップ</a></li>
+						</ul>
 					</div>
 
 					<div class="flex-item">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104995.0163729769!2d135.40363682954916!3d34.677570376182786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6553406e2e1%3A0xc55bc16ee46a2fe7!2z5aSn6Ziq5bqc5aSn6Ziq5biC!5e0!3m2!1sja!2sjp!4v1692873388900!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<p>お問い合わせ</p>
+						<p><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(10:00 - 16:00)</p>
+						<p><a href="contact.html" class="icon-btn contact">メールでのお問い合わせ</a></p>
 					</div>
-
 				</div>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104995.0163729769!2d135.40363682954916!3d34.677570376182786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6553406e2e1%3A0xc55bc16ee46a2fe7!2z5aSn6Ziq5bqc5aSn6Ziq5biC!5e0!3m2!1sja!2sjp!4v1692873388900!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			
 			<p class="copyright">&copy; MEI HASHIMOTO</p>
@@ -178,7 +195,6 @@
 	</footer>
 	
 	<script src="js/script.js"></script>
-	</body>
 </body>
 </html>
 

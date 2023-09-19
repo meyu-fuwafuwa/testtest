@@ -17,9 +17,13 @@
 	text-align: center;
 }
 
+#contact-phone, #contact-mail{
+	padding-top: 80px;
+}
+
 #contact .contact-tel{
 	text-align: center;
-	margin: 0 auto 80px;
+	margin: 0 auto;
 	max-width: 900px;
 }
 #contact .contact-tel p:last-child{

@@ -12,13 +12,16 @@
 }
 
 
-
-
 #syuukaku_list .description{
 	margin-bottom: 40px;
 }
 #syuukaku_list ul.syuukaku-wrap{
 	padding: 0 4%;
+}
+
+#syuukaku_list .syuukaku-wrap li{
+	align-items: flex-end;
+	padding-top: 80px;
 }
 #syuukaku_list ul.syuukaku-wrap li:last-child{
 	margin-bottom: 40px;
@@ -37,14 +40,8 @@
 	margin-bottom: 40px;
 }
 
-#syuukaku_list li{
-	align-items: flex-end;
-}
 #syuukaku_list li:nth-child(2n){
 	flex-direction: row-reverse;
-}
-#syuukaku_list .flex-item{
-	padding-top: 80px;
 }
 #syuukaku_list li .img{
 	width: 55%;

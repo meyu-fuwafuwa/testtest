@@ -32,7 +32,7 @@
 	text-align: center;
 }
 #syuukaku_list h3 span{
-	border-bottom: 5px dashed #FFBFBF;
+	border-bottom: 5px dashed var(--bg-color);
 }
 
 #syuukaku_list .timetable{

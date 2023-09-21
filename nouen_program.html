@@ -18,7 +18,6 @@
 
 <body>
 	
-	
 	<header>
 		<div class="wrap header-wrap">
 			<h1 class="site-title">
@@ -26,26 +25,76 @@
 					<img src="img/logo.png" alt="ロゴマーク">
 				</a>
 			</h1>
-			<div class="header-list pc-only">
-				<ul>
-					<li><a href="./index.html#news">お知らせ</a></li>
-					<li><a href="./syuukaku_list.html">農作物</a></li>
-					<li><a href="./nouen_program.html">体験プログラム</a></li>
-					<li><a href="javascript:dummy();">アクセス</a></li>
-				</ul>
-				<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
-				<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
-			</div>
+			
+			<ul class="pc-nav pc-only">
+				<li><a href="./index.html#news">
+						<div class="img">
+							<img src="img/header-news.png" alt="お知らせアイコン">
+						</div>
+						<p>お知らせ</p>
+					</a>
+				</li>
+				<li>
+					<a href="./syuukaku_list.html">
+						<div class="img">
+							<img src="img/header-syuukaku.png" alt="収穫物アイコン">
+						</div>
+						<p>収穫物</p>
+					</a>
+				</li>
+				<li>
+					<a href="./nouen_program.html">
+						<div class="img">
+							<img src="img/header-program.png" alt="体験プログラムアイコン">
+						</div>
+						<p>体験プログラム</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:dummy();">
+						<div class="img">
+							<img src="img/header-online.png" alt="オンラインアイコン">
+						</div>
+						<p>オンラインショップ</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:dummy();">
+						<div class="img">
+							<img src="img/header-recruit.png" alt="採用情報アイコン">
+						</div>
+						<p>採用情報</p>
+					</a>
+				</li>
+				<li>
+					<a href="./index.html#access">
+						<div class="img">
+							<img src="img/header-access.png" alt="アクセスアイコン">
+						</div>
+						<p>アクセス</p>
+					</a>
+				</li>
+				<li>
+					<a href="./contact.html">
+						<div class="img">
+							<img src="img/header-contact.png" alt="お問い合わせアイコン">
+						</div>
+						<p>お問い合わせ</p>
+					</a>
+				</li>
+			</ul>
 			<div class="openbtn pc-none"><span></span><span></span><span></span></div>
 		</div>
 		<nav id="g-nav">
 			<div id="g-nav-list">
 				<div class="nav-wrap">
 					<ul>
+						<li><a href="./index.html">トップページ</a></li>
 						<li><a href="./index.html#news">お知らせ</a></li>
-						<li><a href="./syuukaku_list.html">農作物</a></li>
+						<li><a href="./syuukaku_list.html">収穫物</a></li>
 						<li><a href="./nouen_program.html">体験プログラム</a></li>
 						<li><a href="javascript:dummy();">アクセス</a></li>
+						<li><a href="javascript:dummy();">採用情報</a></li>
 					</ul>
 					<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
 					<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
@@ -61,7 +110,7 @@
 			
 			<div class="breadcrumb">
 				<ol>
-					<li><a href="./index.html">ホーム</a></li>
+					<li><a href="./index.html">トップページ</a></li>
 					<li>体験プログラム</li>
 				</ol>
 			</div>
@@ -69,14 +118,17 @@
 			<div class="subpage-titlebox">
 				<div class="subpage-titleitem">
 					<h2 class="sec-title" data-en="Program"><span>体験プログラム</span></h2>
-					<p>
-					※収穫物の状態や天気などにより、延期・中止する場合がございます。詳しくは<a href="javascript:dummy();" class="color-red">お知らせ</a>をごらんください。
-					</p>
 					
-					<p class="program-description">
-						※全てのプログラムにて、２０人以上の団体様はお電話にてご予約をお願いいたします。<br>
-						<a href="tel:123-123-1234">TEL:123-123-1234</a>（電話受付時間：10:00 - 16:00）
-					</p>
+					<div class="program-description">
+						<p>
+						※収穫物の状態や天気などにより、延期・中止する場合がございます。詳しくは<a href="javascript:dummy();" class="color-red">お知らせ</a>をごらんください。
+						</p>
+
+						<p class="program-description">
+							※全てのプログラムにて、２０人以上の団体様はお電話にてご予約をお願いいたします。<br>
+							<a href="tel:123-123-1234">TEL:123-123-1234</a>（電話受付時間：10:00 - 16:00）
+						</p>
+					</div>
 
 					<ul class="internal-btn-wrap">
 						<li><a class="btn btn-internal" href="#mikakugari">味覚狩り</a></li>
@@ -91,7 +143,7 @@
 				
 				<div class="program-wrap" id="mikakugari">
 					<h3>味覚狩り</h3>
-					<p class="syuukaku-check">農作物については<a href="./syuukaku_list.html" class="color-red">こちら</a>もチェック！</p>
+					<p class="syuukaku-check">収穫物については<a href="./syuukaku_list.html" class="color-red">こちら</a>もチェック！</p>
 					<ul class="program-box">
 						<li>
 							<div class="label finish"><img src="./img/program-ichigo.jpg" alt="いちご"></div>
@@ -404,7 +456,7 @@
 		</a>
 		<div class="footer-wrap">
 			<div class="contents">
-				<div class="flex-box">
+				<div class="footer-box flex-box">
 
 					<div class="flex-item">
 						<div class="site-title">
@@ -420,21 +472,27 @@
 					</div>
 					
 					<div class="flex-item">
-						<p>サイトマップ</p>
 						<ul>
 							<li><a href="./index.html">トップページ</a></li>
 							<li><a href="./index.html#news">お知らせ</a></li>
-							<li><a href="./syuukaku_list.html">農作物</a></li>
+							<li><a href="./syuukaku_list.html">収穫物</a></li>
 							<li><a href="./nouen_program.html">体験プログラム</a></li>
-							<li><a href="javascript:dummy();">アクセス</a></li>
 							<li><a href="javascript:dummy();">オンラインショップ</a></li>
+							<li><a href="javascript:dummy();">採用情報</a></li>
+							<li><a href="javascript:dummy();">アクセス</a></li>
+							<li><a href="./contact.html">お問い合わせ</a></li>
 						</ul>
 					</div>
 
 					<div class="flex-item">
-						<p>お問い合わせ</p>
-						<p><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(10:00 - 16:00)</p>
+						<p class="margin-bottom-20"><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(10:00 - 16:00)</p>
 						<p><a href="contact.html" class="icon-btn contact">お問い合わせ</a></p>
+						
+						<div class="sns flex-box">
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-facebook.png" alt="Facebook"></a></div>
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-instagram.png" alt="instagram"></a></div>
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-youtube.png" alt="youtube"></a></div>
+						</div>
 					</div>
 				</div>
 			</div>

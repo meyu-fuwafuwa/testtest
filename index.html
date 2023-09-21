@@ -23,26 +23,76 @@
 					<img src="img/logo.png" alt="ロゴマーク">
 				</a>
 			</h1>
-			<div class="header-list pc-only">
-				<ul>
-					<li><a href="./index.html#news">お知らせ</a></li>
-					<li><a href="./syuukaku_list.html">農作物</a></li>
-					<li><a href="./nouen_program.html">体験プログラム</a></li>
-					<li><a href="javascript:dummy();">アクセス</a></li>
-				</ul>
-				<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
-				<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
-			</div>
+			
+			<ul class="pc-nav pc-only">
+				<li><a href="./index.html#news">
+						<div class="img">
+							<img src="img/header-news.png" alt="お知らせアイコン">
+						</div>
+						<p>お知らせ</p>
+					</a>
+				</li>
+				<li>
+					<a href="./syuukaku_list.html">
+						<div class="img">
+							<img src="img/header-syuukaku.png" alt="収穫物アイコン">
+						</div>
+						<p>収穫物</p>
+					</a>
+				</li>
+				<li>
+					<a href="./nouen_program.html">
+						<div class="img">
+							<img src="img/header-program.png" alt="体験プログラムアイコン">
+						</div>
+						<p>体験プログラム</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:dummy();">
+						<div class="img">
+							<img src="img/header-online.png" alt="オンラインアイコン">
+						</div>
+						<p>オンラインショップ</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:dummy();">
+						<div class="img">
+							<img src="img/header-recruit.png" alt="採用情報アイコン">
+						</div>
+						<p>採用情報</p>
+					</a>
+				</li>
+				<li>
+					<a href="./index.html#access">
+						<div class="img">
+							<img src="img/header-access.png" alt="アクセスアイコン">
+						</div>
+						<p>アクセス</p>
+					</a>
+				</li>
+				<li>
+					<a href="./contact.html">
+						<div class="img">
+							<img src="img/header-contact.png" alt="お問い合わせアイコン">
+						</div>
+						<p>お問い合わせ</p>
+					</a>
+				</li>
+			</ul>
 			<div class="openbtn pc-none"><span></span><span></span><span></span></div>
 		</div>
 		<nav id="g-nav">
 			<div id="g-nav-list">
 				<div class="nav-wrap">
 					<ul>
+						<li><a href="./index.html">トップページ</a></li>
 						<li><a href="./index.html#news">お知らせ</a></li>
-						<li><a href="./syuukaku_list.html">農作物</a></li>
+						<li><a href="./syuukaku_list.html">収穫物</a></li>
 						<li><a href="./nouen_program.html">体験プログラム</a></li>
 						<li><a href="javascript:dummy();">アクセス</a></li>
+						<li><a href="javascript:dummy();">採用情報</a></li>
 					</ul>
 					<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
 					<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
@@ -61,17 +111,6 @@
 				<p class="text">みんなおいで。<br>ここは笑顔になれる場所。</p>
 			</div>
 		</section><!--mainvisual-->
-		
-
-		<section id="about">
-			<p>おおさかあびりん農園は<br>大阪府〇〇市にある観光農園です。<br>様々な農作物と豊かな自然のなかで<br>あなたもわたしもきっと笑顔になれるはず。</p>
-			<div class="img">
-				<picture>
-				  <source srcset="img/gallary-sp.png" media="(max-width: 767px)">
-				  <img src="img/gallary-pc.png" alt="農園の様子">
-				</picture>
-			</div>
-		</section><!--about-->
 		
 		
 		<section id="news">
@@ -113,53 +152,55 @@
 		</section><!--news-->
 		
 		
-		<section id="point">
-			<div class="contents">
-				<div class="point-wrap">
-					<h2 class="sec-title" data-en="Point"><span>当園のポイント</span></h2>
-					
-					<div class="season point-item-wrap">
-						<h3 class="num-title" data-number="01"><span>多彩な農作物</span></h3>
-						<p>あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。消費地に近い利点を活かし、出荷直前まで熟させることができます。</p>
-						<a href="./syuukaku_list.html" class="btn">農作物一覧</a>
-						<ul class="flex-box">
-							<li class="flex-item circle">
-								<img src="img/harvest1.jpg" alt="いちご">
-							</li>
-							<li class="flex-item circle">
-								<img src="img/harvest2.jpg" alt="ぶどう">
-							</li>
-							<li class="flex-item circle">
-								<img src="img/harvest3.jpg" alt="なし">
-							</li>
-							<li class="flex-item circle">
-								<img src="img/harvest4.jpg" alt="いちじく">
-							</li>
-							<li class="flex-item circle">
-								<img src="img/harvest5.jpg" alt="さつまいも">
-							</li>
-						</ul>
+		<section id="about">
+			<div class="flex-box img">
+				<div class="flex-item">
+					<img src="img/about1.jpg" alt="いちご狩りの様子">
+				</div>
+				<div class="flex-item">
+					<img src="img/about2.jpg" alt="ぶどう狩りの様子">
+				</div>
+				<div class="flex-item">
+					<img src="img/about3.jpg" alt="いもほりの様子">
+				</div>
+			</div>
+			
+			<div class="bg">
+				<div class="contents">
+					<div class="text">
+						<h2 class="sec-title" data-en="About"><span>あびりん農園とは</span></h2>
+						<p>おおさかあびりん農園は大阪府〇〇市にある観光農園です。おいしいフルーツ・野菜と豊かな自然の中であなたもきっと笑顔になれるはず。〇〇線〇〇駅から徒歩〇〇分、手ぶらでOKのプログラムも多いのでお気軽にお越しいただけます。</p>
 					</div>
-					
-					<div class="program point-item-wrap">
-						<div class="flex-box">
-							<div class="flex-item">
-								<h3 class="num-title" data-number="02"><span>体験プログラム</span></h3>
-								<p>味覚狩りはもちろん、料理体験や農業体験も！</p>
-								<p>スタッフが丁寧に教えますので、初めての方でも安心です。</p>
-								<p>手ぶらOKのプログラムも多いのでお気軽にお越しいただけます。</p>
-								<a href="./nouen_program.html" class="btn">プログラム一覧</a>
-							</div>
-							<div class="flex-item">
-								<img src="img/program.png" alt="体験プログラムの様子">
-							</div>
+					<div class="syuukaku-program">
+						<div class="flex-item">
+							<div class="img"><img src="img/index-syuukaku.jpg" alt="収穫物"></div>
+							<p class="title">収穫物</p>
+							<p class="description">あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。消費地に近い利点を活かし、出荷直前まで熟させることができます。</p>
+							<a href="./syuukaku_list.html" class="btn">くわしくはこちら</a>
+						</div>
+						<div class="flex-item">
+							<div class="img"><img src="img/index-program.jpg" alt="体験プログラム"></div>
+							<p class="title">体験プログラム</p>
+							<p class="description">味覚狩りはもちろん、料理体験や農業体験も！スタッフが丁寧に教えますので、お子様や初めての方でも安心です。手ぶらOKのプログラムも多いのでお気軽にお越しいただけます。</p>
+							<a href="./nouen_program.html" class="btn">くわしくはこちら</a>
 						</div>
 					</div>
-					
-					<div class="kakou point-item-wrap">
+				</div>
+			</div>
+
+		</section>
+	
+		
+		
+		<section id="shop">
+			<div class="contents">
+				<div class="shop-wrap">
+					<h2 class="sec-title" data-en="Sales information"><span>収穫物の販売</span></h2>
+
+					<div class="kakou shop-item-wrap">
 						<div class="flex-box">
 							<div class="flex-item ">
-								<h3 class="num-title" data-number="03"><span>近隣店舗での販売</span></h3>
+								<h3 class="num-title" data-number="1"><span>店舗での販売</span></h3>
 								<p>農産物のほか、農産物のおいしさをそのまま活かして製造したジャムやジュースなどを「あびりん印」として製造・販売しております。</p>
 								<p>近隣の道の駅やスーパーにて販売中です。ぜひお立ち寄りください。</p>
 								<ul>
@@ -170,29 +211,39 @@
 								</ul>
 							</div>
 							<div class="flex-item">
-								<img src="img/shop.png" alt="農作物加工商品">
+								<div class="img margin-bottom-20">
+									<img src="img/shop1.png" alt="収穫物加工商品">
+								</div>
+								<div class="img">
+									<img src="img/shop2.png" alt="収穫物加工商品">
+								</div>
 							</div>
 						</div>
 					</div>
 					
-					<div class="online point-item-wrap">
+					<div class="online shop-item-wrap">
 						<div class="flex-box">
 							<div class="flex-item ">
-								<h3 class="num-title" data-number="04"><span>オンライン販売</span></h3>
+								<h3 class="num-title" data-number="2"><span>オンライン販売</span></h3>
 								<p>廃棄量削減を目的に、規定外となった農産物を「訳あり品」としてオンライン販売しております。</p>
 								<p>見た目は悪くてもおいしさはそのまま！</p>
 								<p>食べ頃が過ぎているものや大きな傷があるものは発送いたしませんのでご安心ください。ご家庭用で味わっていただく用途としてどうぞ。</p>
 								<a href="javascript:dummy();" class="btn">オンラインショップ</a>
 							</div>
 							<div class="flex-item">
-								<img src="img/online.png" alt="オンラインショップで販売している果物">
+								<div class="img margin-bottom-20">
+									<img src="img/shop3.png" alt="オンラインショップで販売している収穫物">
+								</div>
+								<div class="img">
+									<img src="img/shop4.png" alt="オンラインショップで販売している収穫物">
+								</div>
 							</div>
 						</div>
 					</div>
 					
 				</div>
 			</div>
-		</section><!--point-->
+		</section><!--shop-->
 		
 		
 		<section id="recruit">
@@ -230,6 +281,29 @@
 			</div>
 		</section><!--recruit-->
 		
+		<section id="access">
+			<div class="contents">
+				<h2 class="sec-title" data-en="Access"><span>アクセス</span></h2>
+				<div class="flex-box">
+					<div class="flex-item">
+						<dl>
+							<dt>営業時間</dt>
+							<dd>9:00 - 17:00</dd>
+							<dt>休園日</dt>
+							<dd>毎週火曜日、年末年始</dd>
+							<dt>駐車場</dt>
+							<dd>25台<br>内、車いす専用駐車場2台</dd>
+							<dt>住所</dt>
+							<dd>〒123-1234<br>大阪府○○市○○XXX 1-2-3<br>【お車でお越しの方】<br>〇〇インター降りて南へ5分<br>【電車でお越しの方】<br>〇〇線〇〇駅から徒歩〇〇分</dd>
+						</dl>
+					</div>
+					<div class="flex-item">
+						<img src="img/access.png" alt="地図">
+					</div>
+				</div>
+			</div>
+		</section>
+		
 	</main>
 	
 	
@@ -240,7 +314,7 @@
 		</a>
 		<div class="footer-wrap">
 			<div class="contents">
-				<div class="flex-box">
+				<div class="footer-box flex-box">
 
 					<div class="flex-item">
 						<div class="site-title">
@@ -256,21 +330,27 @@
 					</div>
 					
 					<div class="flex-item">
-						<p>サイトマップ</p>
 						<ul>
 							<li><a href="./index.html">トップページ</a></li>
 							<li><a href="./index.html#news">お知らせ</a></li>
-							<li><a href="./syuukaku_list.html">農作物</a></li>
+							<li><a href="./syuukaku_list.html">収穫物</a></li>
 							<li><a href="./nouen_program.html">体験プログラム</a></li>
-							<li><a href="javascript:dummy();">アクセス</a></li>
 							<li><a href="javascript:dummy();">オンラインショップ</a></li>
+							<li><a href="javascript:dummy();">採用情報</a></li>
+							<li><a href="javascript:dummy();">アクセス</a></li>
+							<li><a href="./contact.html">お問い合わせ</a></li>
 						</ul>
 					</div>
 
 					<div class="flex-item">
-						<p>お問い合わせ</p>
-						<p><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(10:00 - 16:00)</p>
+						<p class="margin-bottom-20"><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(10:00 - 16:00)</p>
 						<p><a href="contact.html" class="icon-btn contact">お問い合わせ</a></p>
+						
+						<div class="sns flex-box">
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-facebook.png" alt="Facebook"></a></div>
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-instagram.png" alt="instagram"></a></div>
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-youtube.png" alt="youtube"></a></div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>農作物一覧 - あびりん農場</title>
-	<meta name="Description" content="あびりん農園の農作物一覧です。あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。">
+	<title>収穫物一覧 - あびりん農場</title>
+	<meta name="Description" content="あびりん農園の収穫物一覧です。あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
@@ -23,26 +23,76 @@
 					<img src="img/logo.png" alt="ロゴマーク">
 				</a>
 			</h1>
-			<div class="header-list pc-only">
-				<ul>
-					<li><a href="./index.html#news">お知らせ</a></li>
-					<li><a href="./syuukaku_list.html">農作物</a></li>
-					<li><a href="./nouen_program.html">体験プログラム</a></li>
-					<li><a href="javascript:dummy();">アクセス</a></li>
-				</ul>
-				<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
-				<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
-			</div>
+			
+			<ul class="pc-nav pc-only">
+				<li><a href="./index.html#news">
+						<div class="img">
+							<img src="img/header-news.png" alt="お知らせアイコン">
+						</div>
+						<p>お知らせ</p>
+					</a>
+				</li>
+				<li>
+					<a href="./syuukaku_list.html">
+						<div class="img">
+							<img src="img/header-syuukaku.png" alt="収穫物アイコン">
+						</div>
+						<p>収穫物</p>
+					</a>
+				</li>
+				<li>
+					<a href="./nouen_program.html">
+						<div class="img">
+							<img src="img/header-program.png" alt="体験プログラムアイコン">
+						</div>
+						<p>体験プログラム</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:dummy();">
+						<div class="img">
+							<img src="img/header-online.png" alt="オンラインアイコン">
+						</div>
+						<p>オンラインショップ</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:dummy();">
+						<div class="img">
+							<img src="img/header-recruit.png" alt="採用情報アイコン">
+						</div>
+						<p>採用情報</p>
+					</a>
+				</li>
+				<li>
+					<a href="./index.html#access">
+						<div class="img">
+							<img src="img/header-access.png" alt="アクセスアイコン">
+						</div>
+						<p>アクセス</p>
+					</a>
+				</li>
+				<li>
+					<a href="./contact.html">
+						<div class="img">
+							<img src="img/header-contact.png" alt="お問い合わせアイコン">
+						</div>
+						<p>お問い合わせ</p>
+					</a>
+				</li>
+			</ul>
 			<div class="openbtn pc-none"><span></span><span></span><span></span></div>
 		</div>
 		<nav id="g-nav">
 			<div id="g-nav-list">
 				<div class="nav-wrap">
 					<ul>
+						<li><a href="./index.html">トップページ</a></li>
 						<li><a href="./index.html#news">お知らせ</a></li>
-						<li><a href="./syuukaku_list.html">農作物</a></li>
+						<li><a href="./syuukaku_list.html">収穫物</a></li>
 						<li><a href="./nouen_program.html">体験プログラム</a></li>
 						<li><a href="javascript:dummy();">アクセス</a></li>
+						<li><a href="javascript:dummy();">採用情報</a></li>
 					</ul>
 					<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
 					<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
@@ -57,14 +107,14 @@
 		<section id="syuukaku_list">
 			<div class="breadcrumb">
 				<ol>
-					<li><a href="./index.html">ホーム</a></li>
-					<li>農作物一覧</li>
+					<li><a href="./index.html">トップページ</a></li>
+					<li>収穫物一覧</li>
 				</ol>
 			</div>
 			
 			<div class="subpage-titlebox">
 				<div class="subpage-titleitem">
-					<h2 class="sec-title" data-en="Harvest"><span>農作物一覧</span></h2>
+					<h2 class="sec-title" data-en="Harvest"><span>収穫物一覧</span></h2>
 					<p class="description">あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。消費地に近い利点を活かし、出荷直前まで熟させることができます。</p>
 
 					
@@ -137,7 +187,6 @@
 		</section>
 	</main>
 	
-	
 	<footer>
 		<a id="footer-pagetop" href="#">
 			<img src="img/leaf-white.svg" alt="ページトップ">
@@ -145,7 +194,7 @@
 		</a>
 		<div class="footer-wrap">
 			<div class="contents">
-				<div class="flex-box">
+				<div class="footer-box flex-box">
 
 					<div class="flex-item">
 						<div class="site-title">
@@ -161,24 +210,29 @@
 					</div>
 					
 					<div class="flex-item">
-						<p>サイトマップ</p>
 						<ul>
 							<li><a href="./index.html">トップページ</a></li>
 							<li><a href="./index.html#news">お知らせ</a></li>
-							<li><a href="./syuukaku_list.html">農作物</a></li>
+							<li><a href="./syuukaku_list.html">収穫物</a></li>
 							<li><a href="./nouen_program.html">体験プログラム</a></li>
-							<li><a href="javascript:dummy();">アクセス</a></li>
 							<li><a href="javascript:dummy();">オンラインショップ</a></li>
+							<li><a href="javascript:dummy();">採用情報</a></li>
+							<li><a href="javascript:dummy();">アクセス</a></li>
+							<li><a href="./contact.html">お問い合わせ</a></li>
 						</ul>
 					</div>
 
 					<div class="flex-item">
-						<p>お問い合わせ</p>
-						<p><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(10:00 - 16:00)</p>
+						<p class="margin-bottom-20"><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(10:00 - 16:00)</p>
 						<p><a href="contact.html" class="icon-btn contact">お問い合わせ</a></p>
+						
+						<div class="sns flex-box">
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-facebook.png" alt="Facebook"></a></div>
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-instagram.png" alt="instagram"></a></div>
+							<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-youtube.png" alt="youtube"></a></div>
+						</div>
 					</div>
 				</div>
-				
 			</div>
 			
 			<p class="copyright">&copy; MEI HASHIMOTO</p>

@@ -53,12 +53,6 @@
 	margin-top: auto;
 }
 
-.remodal{
-	background-image: url("../img/bg-lb.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: bottom left;
-}
 .remodal .flex-box{
 	align-items: flex-start;
 }

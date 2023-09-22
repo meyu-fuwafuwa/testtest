@@ -650,7 +650,106 @@ footer .copyright{
 }
 
 
+/************************************************************/
+/*loading*/
+/************************************************************/
+.loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+}
 
+.loading.is-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation {
+	width: 100vw;
+	height: 100vh;
+	transition: all 1s;
+	background-color: #fff;
+	z-index: 9999;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.loading-animation.is-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.loading-animation .img{
+	width: 100px;
+	margin: 0 auto;
+}
+.loading-005 {
+	margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-005 span {
+    display: inline-block;
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.5em;
+    animation: animation-loading-005 1s infinite;
+}
+
+.loading-005 span:nth-of-type(2) {
+    animation-delay: .1s;
+}
+
+.loading-005 span:nth-of-type(3) {
+    animation-delay: .2s;
+}
+
+.loading-005 span:nth-of-type(4) {
+    animation-delay: .3s;
+}
+
+.loading-005 span:nth-of-type(5) {
+    animation-delay: .4s;
+}
+
+.loading-005 span:nth-of-type(6) {
+    animation-delay: .5s;
+}
+
+.loading-005 span:nth-of-type(7) {
+    animation-delay: .6s;
+}
+
+.loading-005 span:nth-of-type(8) {
+    animation-delay: .7s;
+}
+
+.loading-005 span:nth-of-type(9) {
+    animation-delay: .8s;
+}
+
+.loading-005 span:nth-of-type(10) {
+    animation-delay: .9s;
+}
+
+@keyframes animation-loading-005 {
+    50% {
+        transform: translateY(10px);
+    }
+}
 
 /************************************************************/
 /*pc*/

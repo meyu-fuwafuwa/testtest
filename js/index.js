@@ -1,5 +1,46 @@
 // JavaScript Document
 
+var $slide_recruit = $("#js-slider-mainvisual")
+  .slick({
+    arrows: false, // 前・次のボタン
+    dots: true, // ドットナビゲーション
+    autoplay: true,
+    autoplaySpeed: 5000, 
+    speed: 1000, // スライドさせるスピード（ミリ秒）
+    centerMode:true, //センターモード
+    slidesToShow: 1,
+	centerPadding:'20%', //センターモードの時の両端のスライドのサイズ
+	responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+		centerPadding:'5%', 
+        },
+      },
+    ],
+  });
+
+var $slide_recruit = $("#js-slider-mainvisual-sp")
+  .slick({
+    arrows: false, // 前・次のボタン
+    dots: true, // ドットナビゲーション
+    autoplay: true,
+    autoplaySpeed: 5000, 
+    speed: 1000, // スライドさせるスピード（ミリ秒）
+    centerMode:true, //センターモード
+    slidesToShow: 1,
+	centerPadding:'20%', //センターモードの時の両端のスライドのサイズ
+	responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+		centerPadding:'5%', 
+        },
+      },
+    ],
+  });
+
+
 //slick(recruit)
 var $slide_recruit = $("#js-slider-recruit")
   .slick({

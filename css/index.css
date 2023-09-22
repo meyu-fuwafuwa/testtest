@@ -295,9 +295,6 @@
 	
 	
 	/*shop*/
-	#shop .shop-item-wrap{
-		margin-bottom: 80px;
-	}
 	#shop .kakou .flex-box{
 		flex-direction: column;
 	}

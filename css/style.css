@@ -88,7 +88,7 @@ p:last-child{
 }
 
 section{
-	padding: 60px 0;
+	padding: 80px 0;
 }
 section:last-child{
 	padding: 100px 0;
@@ -196,6 +196,27 @@ a.color-red{
 	object-fit: cover;
 }
 
+/*画像に斜線*/
+.triangle{
+	position: relative;
+}
+
+.triangle::before, .triangle::after{
+	content: "";
+	position: absolute;
+	transform: rotate(-35deg);
+	width: 70px;
+	height: 25px;
+	background-color: var(--accent-color);
+}
+.triangle::before{
+	top: -10px;
+	left: -25px;
+}
+.triangle::after{
+	bottom: -10px;
+	right: -25px;
+}
 
 
 /*ボタン*/
@@ -237,12 +258,19 @@ a.color-red{
 	color: var(--accent-color);
 	background-color: #fff;
 }
-
+.btn:hover::after {
+	border-top: 2px solid var(--accent-color);
+	border-right: 2px solid var(--accent-color);
+}
 
 .btn.btn-internal::after{
 	border-top: 2px solid #fff;
 	border-right: 2px solid #fff;
 	transform: rotate(135deg);
+}
+.btn.btn-internal:hover::after {
+	border-top: 2px solid var(--accent-color);
+	border-right: 2px solid var(--accent-color);
 }
 
 .icon-btn{
@@ -380,7 +408,7 @@ header .header-wrap{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 10px 0 10px;
+	padding: 10px;
 	background-color: #fff;
 }
 
@@ -548,9 +576,17 @@ header ul.pc-nav li p{
 #g-nav li a:hover{
 	text-decoration: underline; 
 }
-#g-nav .icon-btn{
-	display: block;
-	margin: 20px auto;
+
+#g-nav .sns.flex-box{
+	justify-content: center;
+	margin-top: 20px;
+}
+#g-nav .sns.flex-box .flex-item.img{
+	width: 50px;
+	margin: 10px;
+}
+#g-nav .sns.flex-box .flex-item.img:hover{
+	opacity: 0.7;
 }
 
 /************************************************************/

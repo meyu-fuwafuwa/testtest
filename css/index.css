@@ -5,32 +5,13 @@
 /************************************************************/
 /*mainvisual*/
 /************************************************************/
-#mainvisual .mainvisual-wrap{
-	position: relative;
-}
-#mainvisual .img{
-	height: 800px;
-}
-#mainvisual .img img{
-	object-fit: cover;
-	height: 100%;
+#mainvisual{
+	padding-bottom: 0;
 }
 
-#mainvisual .text{
-	display: inline;
-	padding: 10px;
-	position: absolute;
-	top: 120px;
-	left: 250px;
-	line-height: 2.0;
-	font-size: 4.2rem;
-	color: #fff;
-	text-shadow: 2px  2px 3px #333,
-		-2px  2px 3px #333,
-		 2px -2px 3px #333,
-		-2px -2px 3px #333;
+#mainvisual .slick-slide {
+    margin: 10px;
 }
-
 
 /************************************************************/
 /*news*/
@@ -117,7 +98,7 @@
 /*shop*/
 /************************************************************/
 #shop{
-	background-image: url("../img/wave2.svg"),url("../img/wave1.svg"),url("../img/bg.png");
+	background-image: url("../img/wave2.svg"),url("../img/wave1.svg"),url("../img/bg-index-shop.png");
 	background-repeat: no-repeat,no-repeat,repeat;
 	background-size:contain,contain,auto;
 	background-position: top center, bottom center;
@@ -232,10 +213,10 @@
 /*access*/
 /************************************************************/
 #access{
-	background-image: url("../img/wave2.svg"),radial-gradient(#fff 30%, transparent 30%);;
+	background-image: url("../img/wave2.svg"),url("../img/bg-index-access.png");
 	background-repeat: no-repeat,repeat;
-	background-size:contain,5px 5px;
-	background-position: top center;
+	background-size:contain,auto;
+	background-position: top center, center;
 	background-color: #d1c8bc;
 }
 #access dl{
@@ -255,6 +236,9 @@
 #access dl dd{
 	width: 70%;
 	background-color: #ddd;
+}
+#access .map{
+	border: 5px solid #fff;
 }
 
 /************************************************************/
@@ -280,22 +264,7 @@
 /************************************************************/
 @media screen and (max-width: 767px){
 
-	/*mainvisual*/
-	#mainvisual .img{
-		height: 600px;
-	}
-	#mainvisual .text{
-		font-size: 3.2rem;
-		top: 50px;
-		left: 20px;
-		writing-mode: vertical-rl;
-	}
-	
-	/*syuukaku*/
-	
-	#syuukaku .flex-item{
-		height: 300px;
-	}
+
 	
 	/*news*/
 	#news .flex-box{
@@ -304,6 +273,26 @@
 	#news .flex-item {
 		width: 100%;
 	}
+	
+	/*about*/
+	#about .img{
+		flex-direction: column;
+	}
+	#about .img .flex-item{
+		width: 100%;
+		height: 300px;
+	}
+	#about .syuukaku-program{
+		flex-direction: column;
+	}
+	#about .syuukaku-program .flex-item{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	#about .syuukaku-program .flex-item:last-child{
+		margin-bottom: 0;
+	}
+	
 	
 	/*shop*/
 	#shop .shop-item-wrap{

@@ -91,11 +91,16 @@
 						<li><a href="./index.html#news">お知らせ</a></li>
 						<li><a href="./syuukaku_list.html">収穫物</a></li>
 						<li><a href="./nouen_program.html">体験プログラム</a></li>
-						<li><a href="javascript:dummy();">アクセス</a></li>
+						<li><a href="javascript:dummy();">オンラインショップ</a></li>
 						<li><a href="javascript:dummy();">採用情報</a></li>
+						<li><a href="javascript:dummy();">アクセス</a></li>
+						<li><a href="./contact.html">お問い合わせ</a></li>
 					</ul>
-					<a href="javascript:dummy();" class="icon-btn cart">オンラインショップ</a>
-					<a href="./contact.html" class="icon-btn contact">お問い合わせ</a>
+					<div class="sns flex-box">
+						<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-facebook.png" alt="Facebook"></a></div>
+						<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-instagram.png" alt="instagram"></a></div>
+						<div class="flex-item img"><a href="javascript:dummy();"><img src="img/sns-youtube.png" alt="youtube"></a></div>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -104,11 +109,15 @@
 	
 	<main>
 		<section id="mainvisual">
-			<div class="mainvisual-wrap">
-				<div class="img">
-					<img src="img/mainvisual.jpg" alt="メインビジュアル" />
-				</div>
-				<p class="text">みんなおいで。<br>ここは笑顔になれる場所。</p>
+			<div id="js-slider-mainvisual" class="sp-none">
+				<div class="slider_item"><img src="img/mainvisual.png" alt="メインビジュアル"></div>
+				<div class="slider_item"><img src="img/mainvisual-budo.png" alt="メインビジュアル（ぶどう狩り）"></div>
+				<div class="slider_item"><img src="img/mainvisual-nashi.png" alt="メインビジュアル（なし狩り）"></div>
+			</div>
+			<div id="js-slider-mainvisual-sp" class="sp-only">
+				<div class="slider_item"><img src="img/mainvisual-sp.png" alt="メインビジュアル"></div>
+				<div class="slider_item"><img src="img/mainvisual-budo-sp.png" alt="メインビジュアル（ぶどう狩り）"></div>
+				<div class="slider_item"><img src="img/mainvisual-nashi-sp.png" alt="メインビジュアル（なし狩り）"></div>
 			</div>
 		</section><!--mainvisual-->
 		
@@ -157,10 +166,10 @@
 				<div class="flex-item">
 					<img src="img/about1.jpg" alt="いちご狩りの様子">
 				</div>
-				<div class="flex-item">
+				<div class="flex-item sp-none">
 					<img src="img/about2.jpg" alt="ぶどう狩りの様子">
 				</div>
-				<div class="flex-item">
+				<div class="flex-item sp-none">
 					<img src="img/about3.jpg" alt="いもほりの様子">
 				</div>
 			</div>
@@ -211,10 +220,10 @@
 								</ul>
 							</div>
 							<div class="flex-item">
-								<div class="img margin-bottom-20">
+								<div class="img margin-bottom-20 triangle">
 									<img src="img/shop1.png" alt="収穫物加工商品">
 								</div>
-								<div class="img">
+								<div class="img triangle">
 									<img src="img/shop2.png" alt="収穫物加工商品">
 								</div>
 							</div>
@@ -231,10 +240,10 @@
 								<a href="javascript:dummy();" class="btn">オンラインショップ</a>
 							</div>
 							<div class="flex-item">
-								<div class="img margin-bottom-20">
+								<div class="img margin-bottom-20 triangle">
 									<img src="img/shop3.png" alt="オンラインショップで販売している収穫物">
 								</div>
-								<div class="img">
+								<div class="img triangle">
 									<img src="img/shop4.png" alt="オンラインショップで販売している収穫物">
 								</div>
 							</div>
@@ -289,16 +298,16 @@
 						<dl>
 							<dt>営業時間</dt>
 							<dd>9:00 - 17:00</dd>
-							<dt>休園日</dt>
+							<dt>休 園 日</dt>
 							<dd>毎週火曜日、年末年始</dd>
-							<dt>駐車場</dt>
+							<dt>駐 車 場</dt>
 							<dd>25台<br>内、車いす専用駐車場2台</dd>
-							<dt>住所</dt>
-							<dd>〒123-1234<br>大阪府○○市○○XXX 1-2-3<br>【お車でお越しの方】<br>〇〇インター降りて南へ5分<br>【電車でお越しの方】<br>〇〇線〇〇駅から徒歩〇〇分</dd>
+							<dt>住　　所</dt>
+							<dd>〒123-1234<br>大阪府○○市○○XXX 1-2-3<br><br>【お車でお越しの方】<br>〇〇インター降りて南へ5分<br><br>【電車でお越しの方】<br>〇〇線〇〇駅から徒歩〇〇分</dd>
 						</dl>
 					</div>
-					<div class="flex-item">
-						<img src="img/access.png" alt="地図">
+					<div class="flex-item map triangle">
+						<img src="img/access-map.png" alt="地図">
 					</div>
 				</div>
 			</div>

@@ -110,22 +110,7 @@
 	background-color: #fff;
 	border-radius: 15px;
 }
-#shop .img{
-	width: 70%;
-}
-#shop .img:nth-child(2n+1){
-	margin-left: auto;
-}
-#shop .img:nth-child(2n){
-	margin-right: auto;
-}
 
-#shop .shop-item-wrap{
-	margin-bottom: 40px;
-}
-#shop .shop-item-wrap:last-child{
-	margin-bottom: 0;
-}
 
 #shop .kakou .flex-box{
 	flex-direction: row-reverse;

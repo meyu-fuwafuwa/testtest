@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>あびりん農場</title>
+	<title>あびりん農園</title>
 	<meta name="description" content="あびりん農園は大阪府〇〇市にある観光農園です。様々な野菜・フルーツと豊かな自然のなかであなたもわたしもきっと笑顔になれるはず。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon.ico">
@@ -25,60 +25,23 @@
 			</h1>
 			
 			<ul class="pc-nav pc-only">
-				<li><a href="./index.html#news">
-						<div class="img">
-							<img src="img/header-news.png" alt="お知らせアイコン">
-						</div>
-						<p>お知らせ</p>
-					</a>
+				<li>
+					<a href="./syuukaku_list.html">農作物一覧</a>
 				</li>
 				<li>
-					<a href="./syuukaku_list.html">
-						<div class="img">
-							<img src="img/header-syuukaku.png" alt="収穫物アイコン">
-						</div>
-						<p>収穫物</p>
-					</a>
+					<a href="./nouen_program.html">体験プログラム</a>
 				</li>
 				<li>
-					<a href="./nouen_program.html">
-						<div class="img">
-							<img src="img/header-program.png" alt="体験プログラムアイコン">
-						</div>
-						<p>体験プログラム</p>
-					</a>
+					<a href="javascript:dummy();">農作物の販売</a>
 				</li>
 				<li>
-					<a href="javascript:dummy();">
-						<div class="img">
-							<img src="img/header-online.png" alt="オンラインアイコン">
-						</div>
-						<p>オンラインショップ</p>
-					</a>
+					<a href="./index.html#recruit">採用情報</a>
 				</li>
 				<li>
-					<a href="./index.html#recruit">
-						<div class="img">
-							<img src="img/header-recruit.png" alt="採用情報アイコン">
-						</div>
-						<p>採用情報</p>
-					</a>
+					<a href="./index.html#access">アクセス</a>
 				</li>
 				<li>
-					<a href="./index.html#access">
-						<div class="img">
-							<img src="img/header-access.png" alt="アクセスアイコン">
-						</div>
-						<p>アクセス</p>
-					</a>
-				</li>
-				<li>
-					<a href="./contact.html">
-						<div class="img">
-							<img src="img/header-contact.png" alt="お問い合わせアイコン">
-						</div>
-						<p>お問い合わせ</p>
-					</a>
+					<a href="./contact.html">お問い合わせ</a>
 				</li>
 			</ul>
 			<div class="openbtn pc-none"><span></span><span></span><span></span></div>
@@ -88,10 +51,9 @@
 				<div class="nav-wrap">
 					<ul>
 						<li><a href="./index.html">トップページ</a></li>
-						<li><a href="./index.html#news">お知らせ</a></li>
-						<li><a href="./syuukaku_list.html">収穫物</a></li>
+						<li><a href="./syuukaku_list.html">農作物一覧</a></li>
 						<li><a href="./nouen_program.html">体験プログラム</a></li>
-						<li><a href="javascript:dummy();">オンラインショップ</a></li>
+						<li><a href="javascript:dummy();">農作物の販売</a></li>
 						<li><a href="./index.html#recruit">採用情報</a></li>
 						<li><a href="./index.html#access">アクセス</a></li>
 						<li><a href="./contact.html">お問い合わせ</a></li>
@@ -108,201 +70,240 @@
 	</header>
 	
 	<main>
-		<section id="mainvisual">
-			<div id="js-slider-mainvisual" class="sp-none">
-				<div class="slider_item"><img src="img/mainvisual.png" alt="メインビジュアル"></div>
-				<div class="slider_item"><img src="img/mainvisual-budo.png" alt="メインビジュアル（ぶどう狩り）"></div>
-				<div class="slider_item"><img src="img/mainvisual-nashi.png" alt="メインビジュアル（なし狩り）"></div>
+		<div id="mainvisual">
+			<div class="slider">
+			  <div class="slick-img">
+				<img src="img/mainvisual1.jpg" alt="メインビジュアル" />
+			  </div>
+			  <div class="slick-img">
+				<img src="img/mainvisual2.jpg" alt="メインビジュアル" />
+			  </div>
+			  <div class="slick-img">
+				<img src="img/mainvisual3.jpg" alt="メインビジュアル" />
+			  </div>
 			</div>
-			<div id="js-slider-mainvisual-sp" class="sp-only">
-				<div class="slider_item"><img src="img/mainvisual-sp.png" alt="メインビジュアル"></div>
-				<div class="slider_item"><img src="img/mainvisual-budo-sp.png" alt="メインビジュアル（ぶどう狩り）"></div>
-				<div class="slider_item"><img src="img/mainvisual-nashi-sp.png" alt="メインビジュアル（なし狩り）"></div>
-			</div>
-		</section><!--mainvisual-->
+		</div>
 		
-		
-		<section id="news">
-			<div class="contents">
-				<h2 class="sec-title" data-en="News"><span>お知らせ</span></h2>
-				<ul class="flex-box">
-					<li class="flex-item">
-						<a href="javascript:dummy();">
-							<div class="img label new">
-								<img src="img/news1.jpg" alt="梨狩り">
-							</div>
-							<p class="title">なし（幸水）狩り開園しました</p>
-							<p class="description">８月２９日から９月中旬までなし狩りを開園いたします。甘くておいしい梨が育っています。皆さまのお越しをお待ちしております。</p>
-						</a>
-					</li>
-					<li class="flex-item">
-						<a href="javascript:dummy();">
-							<div class="img label new">
-								<img src="img/news2.jpg" alt="ピオーネ狩り">
-							</div>
-							<p class="title">ぶどう（ピオーネ）狩り開園しました</p>
-							<p class="description">９月１日からぶどう狩りを開園いたします。強い甘みでありながら爽やかな酸味があり、すっきりとした味が特徴のブドウです。</p>
-						</a>
-					</li>
-					<li class="flex-item">
-						<a href="javascript:dummy();">
-							<div class="img">
-								<img src="img/news-important.png" alt="お知らせ（重要）">
-							</div>
-							<p class="title">８月１５日は休園です</p>
-							<p class="description">８月１５日は台風のため、休園いたします。</p>
-						</a>
-					</li>
-				</ul>
-				<div class="btn-wrap">
-					<a href="javascript:dummy();" class="btn">お知らせ一覧</a>
-				</div>
-			</div>
-		</section><!--news-->
-		
-		
-		<section id="about">
-			<div class="flex-box img">
-				<div class="flex-item">
-					<img src="img/about1.jpg" alt="いちご狩りの様子">
-				</div>
-				<div class="flex-item sp-none">
-					<img src="img/about2.jpg" alt="ぶどう狩りの様子">
-				</div>
-				<div class="flex-item sp-none">
-					<img src="img/about3.jpg" alt="いもほりの様子">
+		<section id="banner" class="zigzag">
+			<div class="contents">	
+				<div class="sales-time">
+					<p>本日の開園時間</p>
+					<div class="flex-box">
+						<div class="flex-item">9月1日</div>
+						<div class="flex-item">9:00 - 17:00</div>
+					</div>
 				</div>
 			</div>
 			
-			<div class="bg">
-				<div class="contents">
-					<div class="text">
-						<h2 class="sec-title" data-en="About"><span>あびりん農園とは</span></h2>
-						<p>おおさかあびりん農園は大阪府〇〇市にある観光農園です。おいしいフルーツ・野菜と豊かな自然の中であなたもきっと笑顔になれるはず。〇〇線〇〇駅から徒歩〇〇分、手ぶらでOKのプログラムも多いのでお気軽にお越しいただけます。</p>
-					</div>
-					<div class="syuukaku-program">
-						<div class="flex-item">
-							<div class="img"><img src="img/index-syuukaku.jpg" alt="収穫物"></div>
-							<p class="title">収穫物</p>
-							<p class="description">あびりん農園ではいちご・ぶどう・なし・いちじく・さつまいもの５種類を育てております。消費地に近い利点を活かし、出荷直前まで熟させることができます。</p>
-							<a href="./syuukaku_list.html" class="btn">くわしくはこちら</a>
-						</div>
-						<div class="flex-item">
-							<div class="img"><img src="img/index-program.jpg" alt="体験プログラム"></div>
-							<p class="title">体験プログラム</p>
-							<p class="description">味覚狩りはもちろん、料理体験や農業体験も！スタッフが丁寧に教えますので、お子様や初めての方でも安心です。手ぶらOKのプログラムも多いのでお気軽にお越しいただけます。</p>
-							<a href="./nouen_program.html" class="btn">くわしくはこちら</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
+			<ul id="slider-banner">
+				<li>
+					<a href="javascript:dummy();"><img src="img/banner1.jpg" alt="バナー"></a>
+				</li>
+				<li>
+					<a href="javascript:dummy();"><img src="img/banner2.jpg" alt="バナー"></a>
+				</li>
+				<li>
+					<a href="javascript:dummy();"><img src="img/banner3.jpg" alt="バナー"></a>
+				</li>
+			</ul>
 		</section>
-	
 		
-		
-		<section id="shop">
+		<section id="hajimeni">
 			<div class="contents">
-				<div class="shop-wrap">
-					<h2 class="sec-title" data-en="Sales information"><span>収穫物の販売</span></h2>
-
-					<div class="kakou shop-item-wrap">
-						<div class="flex-box">
-							<div class="flex-item flex-text">
-								<h3 class="num-title" data-number="1"><span>店舗での販売</span></h3>
-								<p>収穫物のほか、収穫物のおいしさをそのまま活かして製造したジャムやジュースなどを「あびりん印」として製造・販売しております。</p>
-								<p>近隣の道の駅やスーパーにて販売中です。ぜひお立ち寄りください。</p>
-								<ul>
-									<li>道の駅　〇〇〇〇</li>
-									<li>道の駅　〇〇〇〇</li>
-									<li>スーパー　〇〇〇〇</li>
-									<li>スーパー　〇〇〇〇</li>
-								</ul>
-							</div>
-							<div class="flex-item flex-img">
-								<img src="img/shop1.png" alt="収穫物加工商品">
-							</div>
-						</div>
-					</div>
-					
-					<div class="online shop-item-wrap">
-						<div class="flex-box">
-							<div class="flex-item flex-text">
-								<h3 class="num-title" data-number="2"><span>オンライン販売</span></h3>
-								<p>廃棄量削減を目的に、規定外となった農産物を「訳あり品」としてオンライン販売しております。</p>
-								<p>見た目は悪くてもおいしさはそのまま！</p>
-								<p>食べ頃が過ぎているものや大きな傷があるものは発送いたしませんのでご安心ください。ご家庭用で味わっていただく用途としてどうぞ。</p>
-								<a href="javascript:dummy();" class="btn">オンラインショップ</a>
-							</div>
-							<div class="flex-item flex-img">
-								<img src="img/shop2.png" alt="オンラインショップで販売している収穫物">
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</section><!--shop-->
-		
-		
-		<section id="recruit">
-			<div>
-				<h2 class="sec-title" data-en="Recruit"><span>採用情報</span></h2>
-				<ul class="slider-recruit" id="js-slider-recruit">
-					<li class="circle"><img src="img/recruit1.jpg" alt="採用情報画像"></li>
-					<li class="circle"><img src="img/recruit2.jpg" alt="採用情報画像"></li>
-					<li class="circle"><img src="img/recruit3.jpg" alt="採用情報画像"></li>
-					<li class="circle"><img src="img/recruit4.jpg" alt="採用情報画像"></li>
-					<li class="circle"><img src="img/recruit1.jpg" alt="採用情報画像"></li>
-					<li class="circle"><img src="img/recruit2.jpg" alt="採用情報画像"></li>
-					<li class="circle"><img src="img/recruit3.jpg" alt="採用情報画像"></li>
-					<li class="circle"><img src="img/recruit4.jpg" alt="採用情報画像"></li>
-				</ul>
-				<div class="contents">
-					<h3><span>あなたもあびりん農園で<br class="sp-only">みんなを笑顔にしませんか？</span></h3>
-					<div class="flex-box">
-						<div class="flex-item">
-							<p>あびりん農園では障がいのある方々を積極的に採用しております。</p>
-							<p>できる事からスタートしていくので、農業の経験がない方でも安心していただけます。また、採用前に10日間の職場体験を行うことができ、自分に合った仕事なのかをじっくり判断することができます。</p>
-							<p>まずは説明会へお気軽にご参加ください。</p>
-						</div>
-						<div class="flex-item">
-							<p>あびりん農園で働くメリット</p>
-							<ol>
-								<li>定型作業が多く、開放的な空間であるためストレスが少ない</li>
-								<li>障がい者の特性を熟知したスタッフがサポート</li>
-								<li>就労経験がない人でも安心して働くことができる</li>
-							</ol>
-						</div>
-					</div>
-					<a href="javascript:dummy();" class="btn margin-bottom-20">募集要項</a>
-					<a href="javascript:dummy();" class="btn">説明会エントリー</a>
-				</div>
-			</div>
-		</section><!--recruit-->
-		
-		<section id="access">
-			<div class="contents">
-				<h2 class="sec-title" data-en="Access"><span>アクセス</span></h2>
 				<div class="flex-box">
-					<div class="flex-item">
-						<dl>
-							<dt>営業時間</dt>
-							<dd>9:00 - 17:00</dd>
-							<dt>休 園 日</dt>
-							<dd>毎週火曜日、年末年始</dd>
-							<dt>駐 車 場</dt>
-							<dd>25台<br>内、車いす専用駐車場2台</dd>
-							<dt>住　　所</dt>
-							<dd>〒123-1234<br>大阪府○○市○○XXX 1-2-3<br><br>【お車でお越しの方】<br>〇〇インター降りて南へ5分<br><br>【電車でお越しの方】<br>〇〇線〇〇駅から徒歩〇〇分</dd>
-						</dl>
+					<div class="flex-item text">
+						<h2 class="sec-title">はじめに</h2>
+						<p>あびりん農園とは、大阪府〇〇市にある観光農園です。<br>〇〇線〇〇駅から徒歩〇分。<br>小さいお子様もご高齢の方も誰でも楽しめるプログラムをたくさん用意しております。<br>たくさんの農作物と豊かな自然の中であなたもわたしもきっと笑顔になれるはず。</p>
 					</div>
-					<div class="flex-item map">
-						<img src="img/access-map.png" alt="地図">
+					<div class="flex-item img">
+						<img src="img/mainvisual.png" alt="はじめに">
 					</div>
 				</div>
 			</div>
 		</section>
+		
+		<section id="link">
+			<div class="contents">		
+				<ul class="flex-box">
+					
+					<li class="flex-item syuukaku_list">
+						<a href="./syuukaku_list.html">
+							<div class="box">
+								<div class="box-bg"></div>
+								<div class="box-text">
+									<h2>収穫物一覧</h2>
+									<p>あびりん農園ではいちご、ぶどう、なし、いちじく、さつまいもの５種類の農作物を育てています。</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="flex-item nouen_program">
+						<a href="./nouen_program.html">
+							<div class="box">
+								<div class="box-bg"></div>
+								<div class="box-text">
+									<h2>体験プログラム</h2>
+									<p>味覚狩りはもちろん、料理体験や農業体験も！スタッフが丁寧に教えますので、お子様や初めての方でも安心です。</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="flex-item shop">
+						<a href="javascript:dummy();">
+							<div class="box">
+								<div class="box-bg"></div>
+								<div class="box-text">
+									<h2>農作物の販売</h2>
+									<p>農作物のおいしさをそのまま活かして製造したジャムやジュースなどを近隣の道の駅やスーパーにて販売中です。また、規定外となった農作物を訳アリ品としてオンライン販売しております。</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="flex-item recruit">
+						<a href="javascript:dummy();">
+							<div class="box">
+								<div class="box-bg"></div>
+								<div class="box-text">
+									<h2>採用情報</h2>
+									<p>あなたもあびりん農園でみんなを笑顔にしませんか？あびりん農園では障がいのある方々を積極的に採用しております。</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="flex-item access">
+						<a href="javascript:dummy();">
+							<div class="box">
+								<div class="box-bg"></div>
+								<div class="box-text">
+									<h2>アクセス</h2>
+									<p>公共機関・お車でお越しの場合のルートや、駐車場情報など。</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="flex-item contact">
+						<a href="./contact.html">
+							<div class="box">
+								<div class="box-bg"></div>
+								<div class="box-text">
+									<h2>お問い合わせ</h2>
+									<p>あびりん農園へのお問い合わせはこちら。電話またはメールにて受け付けております。</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		<section id="news" class="zigzag">
+			<div class="contents">
+				<h2 class="news-h2">お知らせ</h2>
+				<ul>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.09.01</time>
+							<p>なし狩りが開園しました！</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.09.01</time>
+							<p>ぶどう狩りが開園しました！</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.08.14</time>
+							<p>８月１５日は台風のため休園となります。</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:dummy();">
+							<time>2023.XX.XX</time>
+							<p>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="gallary">
+				<ul class="slider-gallary" id="js-slider-gallary">
+					<li class="circle"><img src="img/gallary01.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary02.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary03.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary04.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary05.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary06.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary07.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary08.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary09.jpg" alt="ギャラリー画像"></li>
+					<li class="circle"><img src="img/gallary10.jpg" alt="ギャラリー画像"></li>
+				</ul>
+		</section>
+		
 		
 	</main>
 	
@@ -332,10 +333,9 @@
 					<div class="flex-item">
 						<ul>
 							<li><a href="./index.html">トップページ</a></li>
-							<li><a href="./index.html#news">お知らせ</a></li>
-							<li><a href="./syuukaku_list.html">収穫物</a></li>
+							<li><a href="./syuukaku_list.html">農作物一覧</a></li>
 							<li><a href="./nouen_program.html">体験プログラム</a></li>
-							<li><a href="javascript:dummy();">オンラインショップ</a></li>
+							<li><a href="javascript:dummy();">農作物の販売</a></li>
 							<li><a href="./index.html#recruit">採用情報</a></li>
 							<li><a href="./index.html#access">アクセス</a></li>
 							<li><a href="./contact.html">お問い合わせ</a></li>

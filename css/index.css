@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************************************************************/
+/*mainvisual*/
+/************************************************************/
+#mainvisual{
+}
+#mainvisual .slider {
+	width: 100%;
+  overflow: hidden;
+}
+#mainvisual .slick-img img {
+	width: 100%;
+	height: 100vh;
+	max-height: 100vw;
+	object-fit: cover;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+#mainvisual .add-animation {
+  animation: zoomUp 10s linear 0s normal both;
+}
+
+
+/************************************************************/
+/*banner*/
+/************************************************************/
+
+.sales-time{
+	background-color: #fff;
+	width: 100%;
+	max-width: 500px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto 40px;;
+}
+.sales-time p{
+	margin-bottom: 10px;
+	background-color: var(--color-main);
+	color: #fff;
+}
+
+.sales-time .flex-box .flex-item:nth-child(1){
+	border-right: 2px solid var(--color-main);
+}
+
+
+
+
+#banner{
+	padding: 40px 0;
+	background-color: var(--color-main);
+	margin-bottom: 60px;
+}
+
+#banner li{
+	padding-left: 10px;
+}
+
+
+/************************************************************/
+/*hajimeni*/
+/************************************************************/
+#hajimeni{
+	margin-bottom: 80px;
+}
+#hajimeni .flex-item.img{
+	width: 60%;
+}#hajimeni .flex-item.text{
+	width: 40%;
+}
+
+
+
+/************************************************************/
+/*link*/
+/************************************************************/
+#link ul li{
+	padding: 0 10px 20px;
+}
+
+#link .box{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+#link .box-bg{
+  background: url('../img/about3.jpg') center center / cover no-repeat;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: 0;
+  transition: .5s ease-in-out;
+}
+#link .syuukaku_list .box-bg{
+	background-image: url("../img/link-syuukakubutu.jpg");
+}
+#link .nouen_program .box-bg{
+	background-image: url("../img/link-program.jpg");
+}
+#link .shop .box-bg{
+	background-image: url("../img/link-shop.jpg");
+}
+#link .recruit .box-bg{
+	background-image: url("../img/link-recruit.jpg");
+}
+#link .access .box-bg{
+	background-image: url("../img/link-access.jpg");
+}
+#link .contact .box-bg{
+	background-image: url("../img/link-contact.jpg");
+}
+
+
+
+#link .box-bg:hover{
+  transform: scale(1.3);
+}
+
+#link .box-bg::before{
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 70%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+#link .box-text{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+	width:80%;
+  pointer-events: none;
+}
+
+#link .box-text h2{
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+#link .box-text p{
+  color: #fff;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+
+
+/************************************************************/
+/*news*/
+/************************************************************/
+#news {
+	position: relative;
+	background-color: var(--color-main);
+	margin: 80px 0;
+	padding: 80px 0;
+}
+#news .news-h2{
+	text-align: center;
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 42px;
+}
+#news ul{
+	margin: 0 auto;
+	max-width: 900px;
+	max-height: 300px;
+	overflow-y: scroll;
+	background-color: #fff;
+	padding: 30px;
+}
+#news ul li{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px dotted var(--color-main);
+}
+
+#news ul li:last-child{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+#news ul li a:hover{
+	text-decoration: underline;
+}
+
+/************************************************************/
+/* gallary */
+/************************************************************/
+#gallary{
+	margin-bottom: 80px;
+}
+.slider-gallary .slick-slide {
+	width: 300px;
+	position: relative;
+	overflow: hidden;
+}
+.slider-gallary .slick-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/************************************************************/
+/*pc*/
+/************************************************************/
+@media screen and (min-width: 1280px){
+
+}
+/************************************************************/
+/*tablet*/
+/************************************************************/
+@media screen and ( max-width: 1279px) and (min-width: 768px){
+
+	#mainvisual .text {
+		font-size: 3.2rem;
+		top: 70px;
+		left: 100px;
+		writing-mode: vertical-rl;
+	}
+}
+/************************************************************/
+/*sp*/
+/************************************************************/
+@media screen and (max-width: 767px){
+	
+	#hajimeni .flex-item.img,
+	#hajimeni .flex-item.text{
+		width: 100%;
+	}
+	#link .flex-item{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+

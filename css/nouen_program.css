@@ -63,30 +63,13 @@
 	text-align: left;
 	padding-left: 20px;
 	margin-bottom: 20px;
+	font-size: 1.6rem;
 }
 .remodal h4{
 	font-size: 2.0rem;
 	margin-bottom: 10px;
 }
-.remodal dl{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-.remodal dl dt,
-.remodal dl dd{
-	border: 1px solid #fff;
-	padding: 10px;
-}
-.remodal dl dt{
-	width: 30%;
-	background-color: #bbb;
-	text-align: center;
-}
-.remodal dl dd{
-	width: 70%;
-	background-color: #ddd;
-}
+
 /************************************************************/
 /*pc*/
 /************************************************************/

@@ -39,7 +39,7 @@
 	max-width: 500px;
 	padding: 10px;
 	text-align: center;
-	margin: 0 auto 40px;;
+	margin: 0 auto 40px;
 }
 .sales-time p{
 	margin-bottom: 10px;
@@ -84,6 +84,9 @@
 /************************************************************/
 #link ul li{
 	padding: 0 10px 20px;
+}
+#link .flex-box .flex-item{
+	width: 50%;
 }
 
 #link .box{

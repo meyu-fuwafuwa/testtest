@@ -146,7 +146,7 @@ a.color-red{
 }
 .sec-title span{
 	padding-bottom: 5px;
-	border-bottom: 2px dashed var(--color-main);
+	border-bottom: 5px dashed var(--color-main);
 }
 .sec-title::before{
 	content: attr(data-en);
@@ -352,10 +352,12 @@ a.color-red{
 /************************************************************/
 /*subpage*/
 /************************************************************/
-
+.subpage{
+	padding: 70px 0 100px;
+}
 .subpage-titlebox{
 	width: 100%;
-	background-image: url("../img/mainvisual_contact.jpg");
+	background-image: url("../img/mainvisual_subpage.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -771,9 +773,6 @@ footer .copyright{
 	}
 	.pc-none{
 		display: none !important;
-	}
-	section:first-child{
-		padding-top: 100px;
 	}
 }
 /************************************************************/

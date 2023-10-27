@@ -149,6 +149,10 @@
   font-weight: bold;
 }
 
+#link .box-text h2:after{
+content:" >";
+}
+
 #link .box-text p{
   color: #fff;
   font-size: 1.6rem;

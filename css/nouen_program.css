@@ -19,7 +19,7 @@
 	font-size: clamp( 2.4rem, 2.4vw, 4.2rem) ;
 	padding-bottom: 10px;
 	letter-spacing: 0.1em;
-	border-bottom: 5px dashed var(--bg-color);
+	border-bottom: 5px dashed var(--color-main);
 	margin-bottom: 20px;
 	text-align: center;
 }

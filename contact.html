@@ -24,60 +24,23 @@
 			</h1>
 			
 			<ul class="pc-nav pc-only">
-				<li><a href="./index.html#news">
-						<div class="img">
-							<img src="img/header-news.png" alt="お知らせアイコン">
-						</div>
-						<p>お知らせ</p>
-					</a>
+				<li>
+					<a href="./syuukaku_list.html">農作物一覧</a>
 				</li>
 				<li>
-					<a href="./syuukaku_list.html">
-						<div class="img">
-							<img src="img/header-syuukaku.png" alt="収穫物アイコン">
-						</div>
-						<p>収穫物</p>
-					</a>
+					<a href="./nouen_program.html">体験プログラム</a>
 				</li>
 				<li>
-					<a href="./nouen_program.html">
-						<div class="img">
-							<img src="img/header-program.png" alt="体験プログラムアイコン">
-						</div>
-						<p>体験プログラム</p>
-					</a>
+					<a href="javascript:dummy();">農作物の販売</a>
 				</li>
 				<li>
-					<a href="javascript:dummy();">
-						<div class="img">
-							<img src="img/header-online.png" alt="オンラインアイコン">
-						</div>
-						<p>オンラインショップ</p>
-					</a>
+					<a href="./index.html#recruit">採用情報</a>
 				</li>
 				<li>
-					<a href="./index.html#recruit">
-						<div class="img">
-							<img src="img/header-recruit.png" alt="採用情報アイコン">
-						</div>
-						<p>採用情報</p>
-					</a>
+					<a href="./index.html#access">アクセス</a>
 				</li>
 				<li>
-					<a href="./index.html#access">
-						<div class="img">
-							<img src="img/header-access.png" alt="アクセスアイコン">
-						</div>
-						<p>アクセス</p>
-					</a>
-				</li>
-				<li>
-					<a href="./contact.html">
-						<div class="img">
-							<img src="img/header-contact.png" alt="お問い合わせアイコン">
-						</div>
-						<p>お問い合わせ</p>
-					</a>
+					<a href="./contact.html">お問い合わせ</a>
 				</li>
 			</ul>
 			<div class="openbtn pc-none"><span></span><span></span><span></span></div>
@@ -87,10 +50,9 @@
 				<div class="nav-wrap">
 					<ul>
 						<li><a href="./index.html">トップページ</a></li>
-						<li><a href="./index.html#news">お知らせ</a></li>
-						<li><a href="./syuukaku_list.html">収穫物</a></li>
+						<li><a href="./syuukaku_list.html">農作物一覧</a></li>
 						<li><a href="./nouen_program.html">体験プログラム</a></li>
-						<li><a href="javascript:dummy();">オンラインショップ</a></li>
+						<li><a href="javascript:dummy();">農作物の販売</a></li>
 						<li><a href="./index.html#recruit">採用情報</a></li>
 						<li><a href="./index.html#access">アクセス</a></li>
 						<li><a href="./contact.html">お問い合わせ</a></li>
@@ -108,7 +70,7 @@
 	
 	<main>
 		
-		<section id="contact">
+		<section id="contact" class="subpage">
 			
 			<div class="breadcrumb">
 				<ol>
@@ -130,7 +92,7 @@
 					<h3 class="contents-title">お電話でのお問い合わせ</h3>
 					<div class="contact-tel">
 						<p class="tel-number"><a href="tel:123-123-1234">TEL : 123-123-1234</a></p>
-						<p>受付時間　10:00 - 16:00</p>
+						<p>受付時間　9:00 - 17:00</p>
 					</div>
 				</div>
 				
@@ -139,7 +101,7 @@
 					<p>3日以内にメールが届かない場合、お客様のメール受信設定をご確認いただくか、お手数ですがお電話にてお問い合わせをお願いいたします。</p>
 					<form action="#" method="post">
 						<dl class="flex-box">
-							<dt class="flex-item"><label for="name">お問い合わせ内容</label></dt>
+							<dt class="flex-item"><label for="name"><span class="label-required">必須</span>お問い合わせ内容</label></dt>
 							<dd class="flex-item">
 								<select name="contact-type">
 										<option value="" selected="selected">
@@ -147,16 +109,16 @@
 										<option value="type1">
 										体験プログラムについて</option>
 										<option value="type2">
-										収穫物について</option>
+										農作物について</option>
 										<option value="type3">
 										上記以外</option>
 								</select>
 							</dd>
-							<dt class="flex-item"><label for="name">名前</label></dt>
-							<dd class="flex-item"><input type="text" id="name" name="your-name"></dd>
-							<dt class="flex-item"><label for="email">メールアドレス</label></dt>
-							<dd class="flex-item"><input type="email" id="email" name="your-email"></dd>
-							<dt class="flex-item"><label for="message">メッセージ</label></dt>
+							<dt class="flex-item"><label for="name"><span class="label-required">必須</span>名前</label></dt>
+							<dd class="flex-item"><input type="text" id="name" name="your-name"  placeholder="例）あびりん　太郎"></dd>
+							<dt class="flex-item"><label for="email"><span class="label-required">必須</span>メールアドレス</label></dt>
+							<dd class="flex-item"><input type="email" id="email" name="your-email" placeholder="例）example@sample.com"></dd>
+							<dt class="flex-item"><label for="message"><span class="label-required">必須</span>メッセージ</label></dt>
 							<dd class="flex-item"><textarea id="message" name="your-message"></textarea></dd>
 						</dl>
 						<input class="btn" type="submit" value="確認画面へ">
@@ -193,10 +155,9 @@
 					<div class="flex-item">
 						<ul>
 							<li><a href="./index.html">トップページ</a></li>
-							<li><a href="./index.html#news">お知らせ</a></li>
-							<li><a href="./syuukaku_list.html">収穫物</a></li>
+							<li><a href="./syuukaku_list.html">農作物一覧</a></li>
 							<li><a href="./nouen_program.html">体験プログラム</a></li>
-							<li><a href="javascript:dummy();">オンラインショップ</a></li>
+							<li><a href="javascript:dummy();">農作物の販売</a></li>
 							<li><a href="./index.html#recruit">採用情報</a></li>
 							<li><a href="./index.html#access">アクセス</a></li>
 							<li><a href="./contact.html">お問い合わせ</a></li>
@@ -204,7 +165,7 @@
 					</div>
 
 					<div class="flex-item">
-						<p class="margin-bottom-20"><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(10:00 - 16:00)</p>
+						<p class="margin-bottom-20"><a href="tel:123-123-1234" class="tel">TEL:123-123-1234</a><br>(9:00 - 17:00)</p>
 						<p><a href="contact.html" class="icon-btn contact">お問い合わせ</a></p>
 						
 						<div class="sns flex-box">
@@ -224,7 +185,6 @@
 	
 	<div class="loading">
 		<div class="loading-animation">
-			<div class="img"><img src="img/leaf-green.png" alt="葉っぱ"></div>
 			<div class="loading-005">
 				<p>
 					<span>L</span>

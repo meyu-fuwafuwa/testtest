@@ -6,7 +6,6 @@
 /*syuukaku_list*/
 /************************************************************/
 
-
 #syuukaku_list .subpage-titlebox{
 	background-image: url("../img/mainvisual_syuukaku_list.jpg");
 }
@@ -21,7 +20,6 @@
 }
 
 #syuukaku_list .syuukaku-wrap li{
-	align-items: flex-end;
 	padding-top: 80px;
 }
 #syuukaku_list ul.syuukaku-wrap li:last-child{
@@ -33,7 +31,7 @@
 	text-align: center;
 }
 #syuukaku_list h3 span{
-	border-bottom: 5px dashed var(--bg-color);
+	border-bottom: 5px dashed var(--color-main);
 }
 
 #syuukaku_list .timetable{

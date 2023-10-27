@@ -121,7 +121,7 @@ a.color-red{
 }
 
 .flex-item{
-	width: 50%;
+	width: 48%;
 }
 
 /*見出し*/
@@ -347,6 +347,21 @@ a.color-red{
   background-size: 50px 100%;
   background-image: linear-gradient(135deg, var(--color-main) 25%, transparent 25%), linear-gradient(225deg, var(--color-main) 25%, transparent 25%);
   background-position: 0 0;
+}
+
+/*dl dt dd*/
+
+dl.simple-list {
+	background-color:#fff;
+}
+dl.simple-list dt {
+	margin:0;
+	padding:5px 10px;
+	font-weight:bold;
+	background-color:#e0e0e0;
+}
+dl.simple-list dd {
+	padding: 5px 0px 20px;
 }
 
 /************************************************************/

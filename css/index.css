@@ -246,7 +246,7 @@ content:" >";
 	#hajimeni .flex-item.text{
 		width: 100%;
 	}
-	#link .flex-item{
+	#link .flex-box  .flex-item{
 		width: 100%;
 	}
 }

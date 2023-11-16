@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/************************************************************/
+/*xxxxx*/
+/************************************************************/
+#xxxxx h2{
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+#xxxxx h2 span{
+	font-size: 4.2rem;
+}
+
+#xxxxx h3{
+	font-size: 3.2rem;
+	padding-bottom: 10px;
+	letter-spacing: 0.1em;
+	border-bottom: 5px dashed var(--color-main);
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+/*   mainvisual     */
+
+#xxxxx .mainvisual{
+	
+	max-width: 1500px;
+	margin: 0 auto 40px;
+}
+
+/*   link     */
+#xxxxx .link{
+	margin-bottom: 80px;
+}
+
+#xxxxx .link .btn{
+	height: 120px;
+	max-width: 100%;
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+/*   introduction    */
+
+#xxxxx .introduction{
+	position: relative;
+	margin-bottom: 80px;
+}
+
+#xxxxx .introduction .text{
+	width: 55%;
+	padding: 50px;
+	border: 2px solid var(--color-main);
+}
+
+#xxxxx .introduction .catchcopy{
+	font-size: 2.4rem;
+}
+#xxxxx .introduction .catchcopy span {
+    background:linear-gradient(transparent 60%, var(--color-sub) 60%);
+}
+#xxxxx .introduction .text .flex-box .flex-img{
+	width: 25%;
+}
+#xxxxx .introduction .text .flex-box .flex-text{
+	width: 70%;
+	
+}
+#xxxxx .introduction .text .flex-box .flex-text .name{
+	margin-bottom: 10px;
+}
+#xxxxx .introduction .text .flex-box .flex-text .naiyou{
+	font-size: 3.2rem;
+}
+
+#xxxxx .introduction .img{
+	width: 50%;
+	position: absolute;
+	top:50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+#xxxxx .introduction .img img{
+	height: 400px;
+	object-fit: cover;
+}
+
+/* guideline */
+#guideline{
+	margin-bottom: 80px;
+}
+#guideline dl.simple-list{
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+/* message */
+#message .text{
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+
+/************************************************************/
+/*pc*/
+/************************************************************/
+@media screen and (min-width: 1280px){
+
+}
+/************************************************************/
+/*tablet*/
+/************************************************************/
+@media screen and ( max-width: 1279px) and (min-width: 768px){
+
+
+}
+/************************************************************/
+/*sp*/
+/************************************************************/
+@media screen and (max-width: 767px){
+
+	#xxxxx .link .flex-box{
+		flex-direction: column;
+	}
+	
+	#xxxxx .link .flex-box .flex-item{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	#xxxxx .link .flex-box .flex-item:last-child{
+		margin-bottom: 0;
+	}
+	
+	
+	#xxxxx .introduction .text{
+		width: 100%;
+		padding: 20px;
+		margin-bottom: 40px;
+	}
+	
+	#xxxxx .introduction .img{
+		width: 100%;
+		position: inherit;
+		transform: translateY(0%);
+	}
+
+}
+
+
+
+
+
+
+
+
+
